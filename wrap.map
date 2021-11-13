@@ -1075,3 +1075,106 @@ net/minecraft/world/World java.lang.Object
 1 getStrongPower!(Lnet/minecraft/util/BlockPos;)I Integer net.minecraft.util.BlockPos
 1 getDebugLoadedEntities!()Ljava/lang/String; String
 1 isBlockPowered!(Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos
+
+net/minecraft/client/entity/EntityPlayerSP net.minecraft.client.entity.AbstractClientPlayer
+17 sendQueue net.minecraft.client.network.NetHandlerPlayClient
+1 movementInput net.minecraft.util.MovementInput
+1 timeInPortal Float
+1 prevTimeInPortal Float
+18 statWriter net.minecraft.stats.StatFileWriter
+2 lastReportedPosX Double
+2 lastReportedPosY Double
+2 lastReportedPosZ Double
+2 lastReportedYaw Float
+2 lastReportedPitch Float
+2 serverSneakState Boolean
+1 serverSprintState Boolean
+2 positionUpdateTicks Integer
+2 hasValidHealth Boolean
+2 clientBrand String
+1 horseJumpPowerCounter Integer
+1 horseJumpPower Float
+4 mc net.minecraft.client.Minecraft
+4 sprintToggleTimer Integer
+1 sprintingTicksLeft Integer
+1 renderArmYaw Float
+1 renderArmPitch Float
+1 prevRenderArmYaw Float
+1 prevRenderArmPitch Float
+4 isCurrentViewEntity!()Z Boolean
+1 setXPStats!(FII)V void Float;Integer;Integer
+1 canCommandSenderUseCommand!(ILjava/lang/String;)Z Boolean Integer;String
+1 displayVillagerTradeGui!(Lnet/minecraft/entity/IMerchant;)V void net.minecraft.entity.IMerchant
+1 openEditCommandBlock!(Lnet/minecraft/command/server/CommandBlockLogic;)V void net.minecraft.command.server.CommandBlockLogic
+1 openEditSign!(Lnet/minecraft/tileentity/TileEntitySign;)V void net.minecraft.tileentity.TileEntitySign
+1 addChatMessage!(Lnet/minecraft/util/IChatComponent;)V void net.minecraft.util.IChatComponent
+1 playSound!(Ljava/lang/String;FF)V void String;Float;Float
+1 addStat!(Lnet/minecraft/stats/StatBase;I)V void net.minecraft.stats.StatBase;Integer
+1 displayGUIChest!(Lnet/minecraft/inventory/IInventory;)V void net.minecraft.inventory.IInventory
+1 displayGui!(Lnet/minecraft/world/IInteractionObject;)V void net.minecraft.world.IInteractionObject
+1 attackEntityFrom!(Lnet/minecraft/util/DamageSource;F)Z Boolean net.minecraft.util.DamageSource;Float
+1 mountEntity!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 displayGUIHorse!(Lnet/minecraft/entity/passive/EntityHorse;Lnet/minecraft/inventory/IInventory;)V void net.minecraft.entity.passive.EntityHorse;net.minecraft.inventory.IInventory
+1 joinEntityItemWithWorld!(Lnet/minecraft/entity/item/EntityItem;)V void net.minecraft.entity.item.EntityItem
+1 displayGUIBook!(Lnet/minecraft/item/ItemStack;)V void net.minecraft.item.ItemStack
+1 dropOneItem!(Z)Lnet/minecraft/entity/item/EntityItem; net.minecraft.entity.item.EntityItem Boolean
+1 isSneaking!()Z Boolean
+1 addChatComponentMessage!(Lnet/minecraft/util/IChatComponent;)V void net.minecraft.util.IChatComponent
+1 onCriticalHit!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 updateEntityActionState!()V void
+1 isServerWorld!()Z Boolean
+1 swingItem!()V void
+1 getPosition!()Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos
+1 onEnchantmentCritical!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 respawnPlayer!()V void
+1 isUser!()Z Boolean
+4 damageEntity!(Lnet/minecraft/util/DamageSource;F)V void net.minecraft.util.DamageSource;Float
+1 setSprinting!(Z)V void Boolean
+2 isOpenBlockSpace!(Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos
+1 sendChatMessage!(Ljava/lang/String;)V void String
+1 setClientBrand!(Ljava/lang/String;)V void String
+1 heal!(F)V void Float
+4 pushOutOfBlocks!(DDD)Z Boolean Double;Double;Double
+1 onLivingUpdate!()V void
+1 closeScreen!()V void
+1 setPlayerSPHealth!(F)V void Float
+1 onUpdateWalkingPlayer!()V void
+1 closeScreenAndDropStack!()V void
+4 sendHorseJump!()V void
+1 sendPlayerAbilities!()V void
+1 onUpdate!()V void
+1 sendHorseInventory!()V void
+1 getClientBrand!()Ljava/lang/String; String
+1 getStatFileWriter!()Lnet/minecraft/stats/StatFileWriter; net.minecraft.stats.StatFileWriter
+1 isRidingHorse!()Z Boolean
+1 getHorseJumpPower!()F Float
+
+net/minecraft/client/entity/EntityOtherPlayerMP net.minecraft.client.entity.AbstractClientPlayer
+2 isItemInUse Boolean
+2 otherPlayerMPPosRotationIncrements Integer
+2 otherPlayerMPX Double
+2 otherPlayerMPY Double
+2 otherPlayerMPZ Double
+2 otherPlayerMPYaw Double
+2 otherPlayerMPPitch Double
+1 setPositionAndRotation2!(DDDFFIZ)V void Double;Double;Double;Float;Float;Integer;Boolean
+1 canCommandSenderUseCommand!(ILjava/lang/String;)Z Boolean Integer;String
+1 addChatMessage!(Lnet/minecraft/util/IChatComponent;)V void net.minecraft.util.IChatComponent
+1 attackEntityFrom!(Lnet/minecraft/util/DamageSource;F)Z Boolean net.minecraft.util.DamageSource;Float
+1 getPosition!()Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos
+1 setCurrentItemOrArmor!(ILnet/minecraft/item/ItemStack;)V void Integer;net.minecraft.item.ItemStack
+1 onLivingUpdate!()V void
+1 onUpdate!()V void
+
+net/minecraft/client/entity/AbstractClientPlayer net.minecraft.entity.player.EntityPlayer
+2 playerInfo net.minecraft.client.network.NetworkPlayerInfo
+1 hasPlayerInfo!()Z Boolean
+9 getDownloadImageSkin!(Lnet/minecraft/util/ResourceLocation;Ljava/lang/String;)Lnet/minecraft/client/renderer/ThreadDownloadImageData; net.minecraft.client.renderer.ThreadDownloadImageData net.minecraft.util.ResourceLocation;String
+4 getPlayerInfo!()Lnet/minecraft/client/network/NetworkPlayerInfo; net.minecraft.client.network.NetworkPlayerInfo
+9 getLocationSkin!(Ljava/lang/String;)Lnet/minecraft/util/ResourceLocation; net.minecraft.util.ResourceLocation String
+1 hasSkin!()Z Boolean
+1 getLocationSkin!()Lnet/minecraft/util/ResourceLocation; net.minecraft.util.ResourceLocation
+1 getLocationCape!()Lnet/minecraft/util/ResourceLocation; net.minecraft.util.ResourceLocation
+1 getSkinType!()Ljava/lang/String; String
+1 getFovModifier!()F Float
+1 isSpectator!()Z Boolean
