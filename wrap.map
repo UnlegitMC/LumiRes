@@ -1176,3 +1176,10 @@ net/minecraft/client/entity/AbstractClientPlayer net.minecraft.entity.player.Ent
 1 getSkinType!()Ljava/lang/String; String
 1 getFovModifier!()F Float
 1 isSpectator!()Z Boolean
+
+net/minecraft/util/MovementInput java.lang.Object
+1 moveStrafe Float
+1 moveForward Float
+1 jump Boolean
+1 sneak Boolean
+1 updatePlayerMoveState!()V void
