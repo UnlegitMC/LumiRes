@@ -1183,3 +1183,93 @@ net/minecraft/util/MovementInput java.lang.Object
 1 jump Boolean
 1 sneak Boolean
 1 updatePlayerMoveState!()V void
+
+net/minecraft/potion/Potion java.lang.Object
+25 field_180147_A net.minecraft.potion.Potion
+25 field_180148_B net.minecraft.potion.Potion
+25 field_180149_C net.minecraft.potion.Potion
+25 field_180143_D net.minecraft.potion.Potion
+25 field_180144_E net.minecraft.potion.Potion
+25 field_180145_F net.minecraft.potion.Potion
+25 field_180146_G net.minecraft.potion.Potion
+1 id Int
+18 isBadEffect Boolean
+18 liquidColor Int
+2 name String
+2 statusIconIndex Int
+2 effectiveness Double
+2 usable Boolean
+25 potionTypes Array<net.minecraft.potion.Potion>
+25 field_180151_b net.minecraft.potion.Potion
+25 moveSpeed net.minecraft.potion.Potion
+25 moveSlowdown net.minecraft.potion.Potion
+25 digSpeed net.minecraft.potion.Potion
+25 digSlowdown net.minecraft.potion.Potion
+25 damageBoost net.minecraft.potion.Potion
+25 heal net.minecraft.potion.Potion
+25 harm net.minecraft.potion.Potion
+25 jump net.minecraft.potion.Potion
+25 confusion net.minecraft.potion.Potion
+25 regeneration net.minecraft.potion.Potion
+25 resistance net.minecraft.potion.Potion
+25 fireResistance net.minecraft.potion.Potion
+25 waterBreathing net.minecraft.potion.Potion
+25 invisibility net.minecraft.potion.Potion
+25 blindness net.minecraft.potion.Potion
+25 nightVision net.minecraft.potion.Potion
+25 hunger net.minecraft.potion.Potion
+25 weakness net.minecraft.potion.Potion
+25 poison net.minecraft.potion.Potion
+25 wither net.minecraft.potion.Potion
+25 healthBoost net.minecraft.potion.Potion
+25 absorption net.minecraft.potion.Potion
+25 saturation net.minecraft.potion.Potion
+25 field_180153_z net.minecraft.potion.Potion
+26 field_180150_I java.util.Map<*, *>
+18 attributeModifierMap java.util.Map<*, *>
+1 getName!()Ljava/lang/String; String
+4 setEffectiveness!(D)Lnet/minecraft/potion/Potion; net.minecraft.potion.Potion Double
+1 isReady!(II)Z Boolean Int;Int
+1 getAttributeModifierAmount!(ILnet/minecraft/entity/ai/attributes/AttributeModifier;)D Double Int;net.minecraft.entity.ai.attributes.AttributeModifier
+9 getDurationString!(Lnet/minecraft/potion/PotionEffect;)Ljava/lang/String; String net.minecraft.potion.PotionEffect
+1 affectEntity!(Lnet/minecraft/entity/Entity;Lnet/minecraft/entity/Entity;Lnet/minecraft/entity/EntityLivingBase;ID)V void net.minecraft.entity.Entity;net.minecraft.entity.Entity;net.minecraft.entity.EntityLivingBase;Int;Double
+1 performEffect!(Lnet/minecraft/entity/EntityLivingBase;I)V void net.minecraft.entity.EntityLivingBase;Int
+1 registerPotionAttributeModifier!(Lnet/minecraft/entity/ai/attributes/IAttribute;Ljava/lang/String;DI)Lnet/minecraft/potion/Potion; net.minecraft.potion.Potion net.minecraft.entity.ai.attributes.IAttribute;String;Double;Int
+1 isInstant!()Z Boolean
+4 setIconIndex!(II)Lnet/minecraft/potion/Potion; net.minecraft.potion.Potion Int;Int
+9 getPotionFromResourceLocation!(Ljava/lang/String;)Lnet/minecraft/potion/Potion; net.minecraft.potion.Potion String
+1 setPotionName!(Ljava/lang/String;)Lnet/minecraft/potion/Potion; net.minecraft.potion.Potion String
+1 getId!()I Int
+1 hasStatusIcon!()Z Boolean
+1 getStatusIconIndex!()I Int
+1 isBadEffect!()Z Boolean
+1 getEffectiveness!()D Double
+1 isUsable!()Z Boolean
+1 getLiquidColor!()I Int
+1 removeAttributesModifiersFromEntity!(Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/ai/attributes/BaseAttributeMap;I)V void net.minecraft.entity.EntityLivingBase;net.minecraft.entity.ai.attributes.BaseAttributeMap<*, *>;Int
+1 applyAttributesModifiersToEntity!(Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/ai/attributes/BaseAttributeMap;I)V void net.minecraft.entity.EntityLivingBase;net.minecraft.entity.ai.attributes.BaseAttributeMap<*, *>;Int
+net/minecraft/potion/PotionEffect java.lang.Object
+26 LOGGER org.apache.logging.log4j.Logger
+2 potionID Int
+2 duration Int
+2 amplifier Int
+2 isSplashPotion Boolean
+2 isAmbient Boolean
+2 isPotionDurationMax Boolean
+2 showParticles Boolean
+1 getPotionID!()I Int
+1 writeCustomPotionEffectToNBT!(Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound; net.minecraft.nbt.NBTTagCompound net.minecraft.nbt.NBTTagCompound
+1 combine!(Lnet/minecraft/potion/PotionEffect;)V void net.minecraft.potion.PotionEffect
+1 onUpdate!(Lnet/minecraft/entity/EntityLivingBase;)Z Boolean net.minecraft.entity.EntityLivingBase
+1 setSplashPotion!(Z)V void Boolean
+1 getDuration!()I Int
+9 readCustomPotionEffectFromNBT!(Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/potion/PotionEffect; net.minecraft.potion.PotionEffect net.minecraft.nbt.NBTTagCompound
+1 performEffect!(Lnet/minecraft/entity/EntityLivingBase;)V void net.minecraft.entity.EntityLivingBase
+1 setPotionDurationMax!(Z)V void Boolean
+1 getAmplifier!()I Int
+1 getIsAmbient!()Z Boolean
+1 equals!(Ljava/lang/Object;)Z Boolean java.lang.Object
+1 getIsShowParticles!()Z Boolean
+1 getEffectName!()Ljava/lang/String; String
+1 getIsPotionDurationMax!()Z Boolean
+2 deincrementDuration!()I Int
