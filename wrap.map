@@ -1273,3 +1273,156 @@ net/minecraft/potion/PotionEffect java.lang.Object
 1 getEffectName!()Ljava/lang/String; String
 1 getIsPotionDurationMax!()Z Boolean
 2 deincrementDuration!()I Int
+
+net/minecraft/client/settings/GameSettings java.lang.Object
+1 touchscreen Boolean
+1 overrideWidth Int
+1 overrideHeight Int
+1 heldItemTooltips Boolean
+1 chatScale Float
+1 chatWidth Float
+1 chatHeightUnfocused Float
+1 chatHeightFocused Float
+1 showInventoryAchievementHint Boolean
+1 mipmapLevels Int
+1 streamBytesPerPixel Float
+1 streamMicVolume Float
+1 streamGameVolume Float
+1 streamKbps Float
+1 streamFps Float
+1 streamCompression Int
+1 streamSendMetadata Boolean
+1 streamPreferredServer String
+1 streamChatEnabled Int
+1 streamChatUserFilter Int
+1 streamMicToggleBehavior Int
+1 useNativeTransport Boolean
+1 entityShadows Boolean
+1 realmsNotifications Boolean
+1 keyBindForward net.minecraft.client.settings.KeyBinding
+1 keyBindLeft net.minecraft.client.settings.KeyBinding
+1 mouseSensitivity Float
+1 hideGUI Boolean
+1 thirdPersonView Int
+1 showDebugInfo Boolean
+1 showDebugProfilerChart Boolean
+1 showLagometer Boolean
+1 lastServer String
+1 smoothCamera Boolean
+1 debugCamEnable Boolean
+1 fovSetting Float
+1 gammaSetting Float
+1 saturation Float
+1 guiScale Int
+1 particleSetting Int
+1 language String
+1 forceUnicodeFont Boolean
+26 logger org.apache.logging.log4j.Logger
+26 gson com.google.gson.Gson
+26 typeListString java.lang.reflect.ParameterizedType
+26 GUISCALES Array<String>
+26 PARTICLES Array<String>
+26 AMBIENT_OCCLUSIONS Array<String>
+26 STREAM_COMPRESSIONS Array<String>
+26 STREAM_CHAT_MODES Array<String>
+26 STREAM_CHAT_FILTER_MODES Array<String>
+26 STREAM_MIC_MODES Array<String>
+26 CLOUDS_TYPES Array<String>
+1 keyBindBack net.minecraft.client.settings.KeyBinding
+1 keyBindRight net.minecraft.client.settings.KeyBinding
+1 keyBindJump net.minecraft.client.settings.KeyBinding
+1 keyBindSneak net.minecraft.client.settings.KeyBinding
+1 keyBindSprint net.minecraft.client.settings.KeyBinding
+1 keyBindInventory net.minecraft.client.settings.KeyBinding
+1 keyBindUseItem net.minecraft.client.settings.KeyBinding
+1 keyBindDrop net.minecraft.client.settings.KeyBinding
+1 keyBindAttack net.minecraft.client.settings.KeyBinding
+1 keyBindPickBlock net.minecraft.client.settings.KeyBinding
+1 keyBindChat net.minecraft.client.settings.KeyBinding
+1 keyBindPlayerList net.minecraft.client.settings.KeyBinding
+1 keyBindCommand net.minecraft.client.settings.KeyBinding
+1 keyBindScreenshot net.minecraft.client.settings.KeyBinding
+1 keyBindTogglePerspective net.minecraft.client.settings.KeyBinding
+1 keyBindSmoothCamera net.minecraft.client.settings.KeyBinding
+1 keyBindFullscreen net.minecraft.client.settings.KeyBinding
+1 keyBindSpectatorOutlines net.minecraft.client.settings.KeyBinding
+1 keyBindStreamStartStop net.minecraft.client.settings.KeyBinding
+1 keyBindStreamPauseUnpause net.minecraft.client.settings.KeyBinding
+1 keyBindStreamCommercials net.minecraft.client.settings.KeyBinding
+1 keyBindStreamToggleMic net.minecraft.client.settings.KeyBinding
+1 keyBindsHotbar Array<net.minecraft.client.settings.KeyBinding>
+1 keyBindings Array<net.minecraft.client.settings.KeyBinding>
+4 mc net.minecraft.client.Minecraft
+1 difficulty net.minecraft.world.EnumDifficulty
+1 invertMouse Boolean
+18 setModelParts java.util.Set<*>
+2 optionsFile java.io.File
+1 renderDistanceChunks Int
+1 viewBobbing Boolean
+1 anaglyph Boolean
+1 fboEnable Boolean
+1 limitFramerate Int
+1 clouds Int
+1 fancyGraphics Boolean
+1 ambientOcclusion Int
+1 resourcePacks java.util.List<*>
+1 incompatibleResourcePacks java.util.List<*>
+1 chatVisibility net.minecraft.entity.player.EntityPlayer.EnumChatVisibility
+1 chatColours Boolean
+1 chatLinks Boolean
+1 chatLinksPrompt Boolean
+1 chatOpacity Float
+1 snooperEnabled Boolean
+1 fullScreen Boolean
+1 enableVsync Boolean
+1 useVbo Boolean
+1 allowBlockAlternatives Boolean
+1 reducedDebugInfo Boolean
+1 hideServerAddress Boolean
+1 advancedItemTooltips Boolean
+1 pauseOnLostFocus Boolean
+2 mapSoundLevels java.util.Map<*, *>
+1 loadOptions!()V void
+9 isKeyDown!(Lnet/minecraft/client/settings/KeyBinding;)Z Boolean net.minecraft.client.settings.KeyBinding
+1 setOptionKeyBinding!(Lnet/minecraft/client/settings/KeyBinding;I)V void net.minecraft.client.settings.KeyBinding;Int
+1 getOptionFloatValue!(Lnet/minecraft/client/settings/GameSettings$Options;)F Float net.minecraft.client.settings.GameSettings.Options
+1 setOptionFloatValue!(Lnet/minecraft/client/settings/GameSettings$Options;F)V void net.minecraft.client.settings.GameSettings.Options;Float
+1 setOptionValue!(Lnet/minecraft/client/settings/GameSettings$Options;I)V void net.minecraft.client.settings.GameSettings.Options;Int
+1 getSoundLevel!(Lnet/minecraft/client/audio/SoundCategory;)F Float net.minecraft.client.audio.SoundCategory
+1 setSoundLevel!(Lnet/minecraft/client/audio/SoundCategory;F)V void net.minecraft.client.audio.SoundCategory;Float
+2 parseFloat!(Ljava/lang/String;)F Float String
+1 switchModelPartEnabled!(Lnet/minecraft/entity/player/EnumPlayerModelParts;)V void net.minecraft.entity.player.EnumPlayerModelParts
+1 setModelPartEnabled!(Lnet/minecraft/entity/player/EnumPlayerModelParts;Z)V void net.minecraft.entity.player.EnumPlayerModelParts;Boolean
+10 getTranslation!([Ljava/lang/String;I)Ljava/lang/String; String Array<String>;Int
+1 saveOptions!()V void
+1 getOptionOrdinalValue!(Lnet/minecraft/client/settings/GameSettings$Options;)Z Boolean net.minecraft.client.settings.GameSettings.Options
+1 sendSettingsToServer!()V void
+9 getKeyDisplayString!(I)Ljava/lang/String; String Int
+1 getKeyBinding!(Lnet/minecraft/client/settings/GameSettings$Options;)Ljava/lang/String; String net.minecraft.client.settings.GameSettings.Options
+1 shouldRenderClouds!()I Int
+1 isUsingNativeTransport!()Z Boolean
+
+net/minecraft/client/settings/KeyBinding java.lang.Object
+26 keybindArray java.util.List<*>
+26 keybindSet java.util.Set<*>
+18 keyDescription String
+18 keyCodeDefault Int
+18 keyCategory String
+2 keyCode Int
+1 pressed Boolean
+2 pressTime Int
+26 hash net.minecraft.util.IntHashMap<*, *>
+9 unPressAllKeys!()V void
+9 onTick!(I)V void Int
+9 setKeyBindState!(IZ)V void Int;Boolean
+1 compareTo!(Lnet/minecraft/client/settings/KeyBinding;)I Int net.minecraft.client.settings.KeyBinding
+9 resetKeyBindingArrayAndHash!()V void
+1 setKeyCode!(I)V void Int
+4161 compareTo!(Ljava/lang/Object;)I Int java.lang.Object
+1 isKeyDown!()Z Boolean
+1 getKeyCategory!()Ljava/lang/String; String
+1 isPressed!()Z Boolean
+1 getKeyDescription!()Ljava/lang/String; String
+1 getKeyCodeDefault!()I Int
+1 getKeyCode!()I Int
+2 unpressKey!()V void
