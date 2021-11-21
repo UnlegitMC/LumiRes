@@ -1426,3 +1426,73 @@ net/minecraft/client/settings/KeyBinding java.lang.Object
 1 getKeyCodeDefault!()I Int
 1 getKeyCode!()I Int
 2 unpressKey!()V void
+
+net/minecraft/client/gui/FontRenderer java.lang.Object
+1 FONT_HEIGHT Int
+1 fontRandom java.util.Random
+26 unicodePageLocations Array<net.minecraft.util.ResourceLocation>
+4 charWidth Array<Int>
+4 glyphWidth Array<Byte>
+2 colorCode Array<Int>
+20 locationFontTexture net.minecraft.util.ResourceLocation
+18 renderEngine net.minecraft.client.renderer.texture.TextureManager
+4 posX Float
+4 posY Float
+2 unicodeFlag Boolean
+2 bidiFlag Boolean
+2 red Float
+2 blue Float
+2 green Float
+2 alpha Float
+2 textColor Int
+2 randomStyle Boolean
+2 boldStyle Boolean
+2 italicStyle Boolean
+2 underlineStyle Boolean
+2 strikethroughStyle Boolean
+1 getUnicodeFlag!()Z Boolean
+1 getCharWidth!(C)I Int Character
+2 renderChar!(CZ)F Float Character;Boolean
+2 getUnicodePageLocation!(I)Lnet/minecraft/util/ResourceLocation; net.minecraft.util.ResourceLocation Int
+4 renderDefaultChar!(IZ)F Float Int;Boolean
+1 onResourceManagerReload!(Lnet/minecraft/client/resources/IResourceManager;)V void net.minecraft.client.resources.IResourceManager
+1 getStringWidth!(Ljava/lang/String;)I Int String
+1 drawStringWithShadow!(Ljava/lang/String;FFI)I Int String;Float;Float;Int
+1 drawString!(Ljava/lang/String;FFIZ)I Int String;Float;Float;Int;Boolean
+1 trimStringToWidth!(Ljava/lang/String;I)Ljava/lang/String; String String;Int
+1 drawString!(Ljava/lang/String;III)I Int String;Int;Int;Int
+1 drawSplitString!(Ljava/lang/String;IIII)V void String;Int;Int;Int;Int
+2 renderStringAligned!(Ljava/lang/String;IIIIZ)I Int String;Int;Int;Int;Int;Boolean
+2 renderSplitString!(Ljava/lang/String;IIIZ)V void String;Int;Int;Int;Boolean
+1 trimStringToWidth!(Ljava/lang/String;IZ)Ljava/lang/String; String String;Int;Boolean
+2 renderStringAtPos!(Ljava/lang/String;Z)V void String;Boolean
+1 setUnicodeFlag!(Z)V void Boolean
+1 getBidiFlag!()Z Boolean
+1 getColorCode!(C)I Int Character
+4 renderUnicodeChar!(CZ)F Float Character;Boolean
+2 loadGlyphTexture!(I)V void Int
+9 getFormatFromString!(Ljava/lang/String;)Ljava/lang/String; String String
+2 renderString!(Ljava/lang/String;FFIZ)I Int String;Float;Float;Int;Boolean
+1 splitStringWidth!(Ljava/lang/String;I)I Int String;Int
+1 setBidiFlag!(Z)V void Boolean
+2 readFontTexture!()V void
+10 isFormatColor!(C)Z Boolean Character
+2 bidiReorder!(Ljava/lang/String;)Ljava/lang/String; String String
+2 readGlyphSizes!()V void
+10 isFormatSpecial!(C)Z Boolean Character
+2 trimStringNewline!(Ljava/lang/String;)Ljava/lang/String; String String
+0 wrapFormattedStringToWidth!(Ljava/lang/String;I)Ljava/lang/String; String String;Int
+2 resetStyles!()V void
+2 sizeStringToWidth!(Ljava/lang/String;I)I Int String;Int
+
+net/minecraft/client/gui/ScaledResolution java.lang.Object
+18 scaledWidthD Double
+18 scaledHeightD Double
+2 scaledWidth Int
+2 scaledHeight Int
+2 scaleFactor Int
+1 getScaledWidth!()I Int
+1 getScaledHeight!()I Int
+1 getScaledWidth_double!()D Double
+1 getScaledHeight_double!()D Double
+1 getScaleFactor!()I Int
