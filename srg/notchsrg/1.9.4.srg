@@ -1,13 +1,3 @@
-PK: . net/minecraft/src
-PK: net net
-PK: net/minecraft net/minecraft
-PK: net/minecraft/client net/minecraft/client
-PK: net/minecraft/client/main net/minecraft/client/main
-PK: net/minecraft/realms net/minecraft/realms
-PK: net/minecraft/server net/minecraft/server
-PK: net/minecraftforge net/minecraftforge
-PK: net/minecraftforge/fml net/minecraftforge/fml
-PK: net/minecraftforge/fml/relauncher net/minecraftforge/fml/relauncher
 CL: a net/minecraft/util/text/TextFormatting
 CL: aa net/minecraft/command/CommandEffect
 CL: aaa net/minecraft/entity/item/EntityEnderPearl
@@ -2212,9 +2202,9 @@ CL: gt net/minecraft/network/play/server/SPacketParticles
 CL: gu net/minecraft/network/play/server/SPacketJoinGame
 CL: gv net/minecraft/network/play/server/SPacketMaps
 CL: gw net/minecraft/network/play/server/SPacketEntity
-CL: gw$a net/minecraft/network/play/server/SPacketEntity$S15PacketEntityRelMove
-CL: gw$b net/minecraft/network/play/server/SPacketEntity$S17PacketEntityLookMove
-CL: gw$c net/minecraft/network/play/server/SPacketEntity$S16PacketEntityLook
+CL: gw$a net/minecraft/network/play/server/SPacketEntity$SPacketEntityRelMove
+CL: gw$b net/minecraft/network/play/server/SPacketEntity$SPacketEntityLookMove
+CL: gw$c net/minecraft/network/play/server/SPacketEntity$SPacketEntityLook
 CL: gx net/minecraft/network/play/server/SPacketMoveVehicle
 CL: gy net/minecraft/network/play/server/SPacketSignEditorOpen
 CL: gz net/minecraft/network/play/server/SPacketPlayerAbilities
@@ -26096,15 +26086,15 @@ MD: gv/a (Leo;)V net/minecraft/network/play/server/SPacketMaps/func_148837_a (Ln
 MD: gv/a (Ler;)V net/minecraft/network/play/server/SPacketMaps/func_148833_a (Lnet/minecraft/network/INetHandler;)V
 MD: gv/a (Lfk;)V net/minecraft/network/play/server/SPacketMaps/func_148833_a (Lnet/minecraft/network/play/INetHandlerPlayClient;)V
 MD: gv/b (Leo;)V net/minecraft/network/play/server/SPacketMaps/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
-MD: gw$a/a (Leo;)V net/minecraft/network/play/server/SPacketEntity$S15PacketEntityRelMove/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
-MD: gw$a/a (Ler;)V net/minecraft/network/play/server/SPacketEntity$S15PacketEntityRelMove/func_148833_a (Lnet/minecraft/network/INetHandler;)V
-MD: gw$a/b (Leo;)V net/minecraft/network/play/server/SPacketEntity$S15PacketEntityRelMove/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
-MD: gw$b/a (Leo;)V net/minecraft/network/play/server/SPacketEntity$S17PacketEntityLookMove/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
-MD: gw$b/a (Ler;)V net/minecraft/network/play/server/SPacketEntity$S17PacketEntityLookMove/func_148833_a (Lnet/minecraft/network/INetHandler;)V
-MD: gw$b/b (Leo;)V net/minecraft/network/play/server/SPacketEntity$S17PacketEntityLookMove/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
-MD: gw$c/a (Leo;)V net/minecraft/network/play/server/SPacketEntity$S16PacketEntityLook/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
-MD: gw$c/a (Ler;)V net/minecraft/network/play/server/SPacketEntity$S16PacketEntityLook/func_148833_a (Lnet/minecraft/network/INetHandler;)V
-MD: gw$c/b (Leo;)V net/minecraft/network/play/server/SPacketEntity$S16PacketEntityLook/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
+MD: gw$a/a (Leo;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityRelMove/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
+MD: gw$a/a (Ler;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityRelMove/func_148833_a (Lnet/minecraft/network/INetHandler;)V
+MD: gw$a/b (Leo;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityRelMove/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
+MD: gw$b/a (Leo;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityLookMove/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
+MD: gw$b/a (Ler;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityLookMove/func_148833_a (Lnet/minecraft/network/INetHandler;)V
+MD: gw$b/b (Leo;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityLookMove/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
+MD: gw$c/a (Leo;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityLook/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
+MD: gw$c/a (Ler;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityLook/func_148833_a (Lnet/minecraft/network/INetHandler;)V
+MD: gw$c/b (Leo;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityLook/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
 MD: gw/a ()I net/minecraft/network/play/server/SPacketEntity/func_186952_a ()I
 MD: gw/a (Laht;)Lrr; net/minecraft/network/play/server/SPacketEntity/func_149065_a (Lnet/minecraft/world/World;)Lnet/minecraft/entity/Entity;
 MD: gw/a (Leo;)V net/minecraft/network/play/server/SPacketEntity/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V

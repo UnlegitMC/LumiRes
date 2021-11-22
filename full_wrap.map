@@ -7925,10 +7925,10 @@ net/minecraft/client/network/NetHandlerLoginClient java.lang.Object
 18 networkManager net.minecraft.network.NetworkManager
 2 gameProfile com.mojang.authlib.GameProfile
 1 onDisconnect!(Lnet/minecraft/util/IChatComponent;)V void net.minecraft.util.IChatComponent
-1 handleLoginSuccess!(Lnet/minecraft/network/login/server/S02PacketLoginSuccess;)V void net.minecraft.network.login.server.S02PacketLoginSuccess
-1 handleEncryptionRequest!(Lnet/minecraft/network/login/server/S01PacketEncryptionRequest;)V void net.minecraft.network.login.server.S01PacketEncryptionRequest
-1 handleEnableCompression!(Lnet/minecraft/network/login/server/S03PacketEnableCompression;)V void net.minecraft.network.login.server.S03PacketEnableCompression
-1 handleDisconnect!(Lnet/minecraft/network/login/server/S00PacketDisconnect;)V void net.minecraft.network.login.server.S00PacketDisconnect
+1 handleLoginSuccess!(Lnet/minecraft/network/login/server/SPacketLoginSuccess;)V void net.minecraft.network.login.server.SPacketLoginSuccess
+1 handleEncryptionRequest!(Lnet/minecraft/network/login/server/SPacketEncryptionRequest;)V void net.minecraft.network.login.server.SPacketEncryptionRequest
+1 handleEnableCompression!(Lnet/minecraft/network/login/server/SPacketEnableCompression;)V void net.minecraft.network.login.server.SPacketEnableCompression
+1 handleDisconnect!(Lnet/minecraft/network/login/server/SPacketDisconnect;)V void net.minecraft.network.login.server.SPacketDisconnect
 2 getSessionService!()Lcom/mojang/authlib/minecraft/MinecraftSessionService; com.mojang.authlib.minecraft.MinecraftSessionService
 net/minecraft/client/network/NetHandlerPlayClient java.lang.Object
 1 currentServerMaxPlayers Int
@@ -7945,77 +7945,77 @@ net/minecraft/client/network/NetHandlerPlayClient java.lang.Object
 1 getNetworkManager!()Lnet/minecraft/network/NetworkManager; net.minecraft.network.NetworkManager
 1 onDisconnect!(Lnet/minecraft/util/IChatComponent;)V void net.minecraft.util.IChatComponent
 1 addToSendQueue!(Lnet/minecraft/network/Packet;)V void net.minecraft.network.Packet
-1 handlePlayerPosLook!(Lnet/minecraft/network/play/server/S08PacketPlayerPosLook;)V void net.minecraft.network.play.server.S08PacketPlayerPosLook
-1 handleSpawnObject!(Lnet/minecraft/network/play/server/S0EPacketSpawnObject;)V void net.minecraft.network.play.server.S0EPacketSpawnObject
-1 handleSpawnExperienceOrb!(Lnet/minecraft/network/play/server/S11PacketSpawnExperienceOrb;)V void net.minecraft.network.play.server.S11PacketSpawnExperienceOrb
-1 handleSpawnGlobalEntity!(Lnet/minecraft/network/play/server/S2CPacketSpawnGlobalEntity;)V void net.minecraft.network.play.server.S2CPacketSpawnGlobalEntity
-1 handleSpawnMob!(Lnet/minecraft/network/play/server/S0FPacketSpawnMob;)V void net.minecraft.network.play.server.S0FPacketSpawnMob
-1 handleSpawnPainting!(Lnet/minecraft/network/play/server/S10PacketSpawnPainting;)V void net.minecraft.network.play.server.S10PacketSpawnPainting
-1 handleSpawnPlayer!(Lnet/minecraft/network/play/server/S0CPacketSpawnPlayer;)V void net.minecraft.network.play.server.S0CPacketSpawnPlayer
-1 handleAnimation!(Lnet/minecraft/network/play/server/S0BPacketAnimation;)V void net.minecraft.network.play.server.S0BPacketAnimation
-1 handleStatistics!(Lnet/minecraft/network/play/server/S37PacketStatistics;)V void net.minecraft.network.play.server.S37PacketStatistics
-1 handleBlockBreakAnim!(Lnet/minecraft/network/play/server/S25PacketBlockBreakAnim;)V void net.minecraft.network.play.server.S25PacketBlockBreakAnim
-1 handleUpdateTileEntity!(Lnet/minecraft/network/play/server/S35PacketUpdateTileEntity;)V void net.minecraft.network.play.server.S35PacketUpdateTileEntity
-1 handleBlockAction!(Lnet/minecraft/network/play/server/S24PacketBlockAction;)V void net.minecraft.network.play.server.S24PacketBlockAction
-1 handleBlockChange!(Lnet/minecraft/network/play/server/S23PacketBlockChange;)V void net.minecraft.network.play.server.S23PacketBlockChange
-1 handleServerDifficulty!(Lnet/minecraft/network/play/server/S41PacketServerDifficulty;)V void net.minecraft.network.play.server.S41PacketServerDifficulty
-1 handleTabComplete!(Lnet/minecraft/network/play/server/S3APacketTabComplete;)V void net.minecraft.network.play.server.S3APacketTabComplete
-1 handleChat!(Lnet/minecraft/network/play/server/S02PacketChat;)V void net.minecraft.network.play.server.S02PacketChat
-1 handleMultiBlockChange!(Lnet/minecraft/network/play/server/S22PacketMultiBlockChange;)V void net.minecraft.network.play.server.S22PacketMultiBlockChange
-1 handleConfirmTransaction!(Lnet/minecraft/network/play/server/S32PacketConfirmTransaction;)V void net.minecraft.network.play.server.S32PacketConfirmTransaction
-1 handleCloseWindow!(Lnet/minecraft/network/play/server/S2EPacketCloseWindow;)V void net.minecraft.network.play.server.S2EPacketCloseWindow
-1 handleOpenWindow!(Lnet/minecraft/network/play/server/S2DPacketOpenWindow;)V void net.minecraft.network.play.server.S2DPacketOpenWindow
-1 handleWindowItems!(Lnet/minecraft/network/play/server/S30PacketWindowItems;)V void net.minecraft.network.play.server.S30PacketWindowItems
-1 handleWindowProperty!(Lnet/minecraft/network/play/server/S31PacketWindowProperty;)V void net.minecraft.network.play.server.S31PacketWindowProperty
-1 handleSetSlot!(Lnet/minecraft/network/play/server/S2FPacketSetSlot;)V void net.minecraft.network.play.server.S2FPacketSetSlot
-1 handleCustomPayload!(Lnet/minecraft/network/play/server/S3FPacketCustomPayload;)V void net.minecraft.network.play.server.S3FPacketCustomPayload
-1 handleDisconnect!(Lnet/minecraft/network/play/server/S40PacketDisconnect;)V void net.minecraft.network.play.server.S40PacketDisconnect
-1 handleEntityStatus!(Lnet/minecraft/network/play/server/S19PacketEntityStatus;)V void net.minecraft.network.play.server.S19PacketEntityStatus
-1 handleEntityNBT!(Lnet/minecraft/network/play/server/S49PacketUpdateEntityNBT;)V void net.minecraft.network.play.server.S49PacketUpdateEntityNBT
-1 handleExplosion!(Lnet/minecraft/network/play/server/S27PacketExplosion;)V void net.minecraft.network.play.server.S27PacketExplosion
-1 handleSetCompressionLevel!(Lnet/minecraft/network/play/server/S46PacketSetCompressionLevel;)V void net.minecraft.network.play.server.S46PacketSetCompressionLevel
-1 handleChangeGameState!(Lnet/minecraft/network/play/server/S2BPacketChangeGameState;)V void net.minecraft.network.play.server.S2BPacketChangeGameState
-1 handleKeepAlive!(Lnet/minecraft/network/play/server/S00PacketKeepAlive;)V void net.minecraft.network.play.server.S00PacketKeepAlive
-1 handleChunkData!(Lnet/minecraft/network/play/server/S21PacketChunkData;)V void net.minecraft.network.play.server.S21PacketChunkData
-1 handleMapChunkBulk!(Lnet/minecraft/network/play/server/S26PacketMapChunkBulk;)V void net.minecraft.network.play.server.S26PacketMapChunkBulk
-1 handleEffect!(Lnet/minecraft/network/play/server/S28PacketEffect;)V void net.minecraft.network.play.server.S28PacketEffect
-1 handleParticles!(Lnet/minecraft/network/play/server/S2APacketParticles;)V void net.minecraft.network.play.server.S2APacketParticles
-1 handleSoundEffect!(Lnet/minecraft/network/play/server/S29PacketSoundEffect;)V void net.minecraft.network.play.server.S29PacketSoundEffect
-1 handleJoinGame!(Lnet/minecraft/network/play/server/S01PacketJoinGame;)V void net.minecraft.network.play.server.S01PacketJoinGame
-1 handleMaps!(Lnet/minecraft/network/play/server/S34PacketMaps;)V void net.minecraft.network.play.server.S34PacketMaps
-1 handleEntityMovement!(Lnet/minecraft/network/play/server/S14PacketEntity;)V void net.minecraft.network.play.server.S14PacketEntity
-1 handleSignEditorOpen!(Lnet/minecraft/network/play/server/S36PacketSignEditorOpen;)V void net.minecraft.network.play.server.S36PacketSignEditorOpen
-1 handlePlayerAbilities!(Lnet/minecraft/network/play/server/S39PacketPlayerAbilities;)V void net.minecraft.network.play.server.S39PacketPlayerAbilities
-1 handleCombatEvent!(Lnet/minecraft/network/play/server/S42PacketCombatEvent;)V void net.minecraft.network.play.server.S42PacketCombatEvent
-1 handlePlayerListItem!(Lnet/minecraft/network/play/server/S38PacketPlayerListItem;)V void net.minecraft.network.play.server.S38PacketPlayerListItem
-1 handleUseBed!(Lnet/minecraft/network/play/server/S0APacketUseBed;)V void net.minecraft.network.play.server.S0APacketUseBed
-1 handleDestroyEntities!(Lnet/minecraft/network/play/server/S13PacketDestroyEntities;)V void net.minecraft.network.play.server.S13PacketDestroyEntities
-1 handleRemoveEntityEffect!(Lnet/minecraft/network/play/server/S1EPacketRemoveEntityEffect;)V void net.minecraft.network.play.server.S1EPacketRemoveEntityEffect
-1 handleResourcePack!(Lnet/minecraft/network/play/server/S48PacketResourcePackSend;)V void net.minecraft.network.play.server.S48PacketResourcePackSend
-1 handleRespawn!(Lnet/minecraft/network/play/server/S07PacketRespawn;)V void net.minecraft.network.play.server.S07PacketRespawn
-1 handleEntityHeadLook!(Lnet/minecraft/network/play/server/S19PacketEntityHeadLook;)V void net.minecraft.network.play.server.S19PacketEntityHeadLook
-1 handleWorldBorder!(Lnet/minecraft/network/play/server/S44PacketWorldBorder;)V void net.minecraft.network.play.server.S44PacketWorldBorder
-1 handleCamera!(Lnet/minecraft/network/play/server/S43PacketCamera;)V void net.minecraft.network.play.server.S43PacketCamera
-1 handleHeldItemChange!(Lnet/minecraft/network/play/server/S09PacketHeldItemChange;)V void net.minecraft.network.play.server.S09PacketHeldItemChange
-1 handleDisplayScoreboard!(Lnet/minecraft/network/play/server/S3DPacketDisplayScoreboard;)V void net.minecraft.network.play.server.S3DPacketDisplayScoreboard
-1 handleEntityMetadata!(Lnet/minecraft/network/play/server/S1CPacketEntityMetadata;)V void net.minecraft.network.play.server.S1CPacketEntityMetadata
-1 handleEntityAttach!(Lnet/minecraft/network/play/server/S1BPacketEntityAttach;)V void net.minecraft.network.play.server.S1BPacketEntityAttach
-1 handleEntityVelocity!(Lnet/minecraft/network/play/server/S12PacketEntityVelocity;)V void net.minecraft.network.play.server.S12PacketEntityVelocity
-1 handleEntityEquipment!(Lnet/minecraft/network/play/server/S04PacketEntityEquipment;)V void net.minecraft.network.play.server.S04PacketEntityEquipment
-1 handleSetExperience!(Lnet/minecraft/network/play/server/S1FPacketSetExperience;)V void net.minecraft.network.play.server.S1FPacketSetExperience
-1 handleUpdateHealth!(Lnet/minecraft/network/play/server/S06PacketUpdateHealth;)V void net.minecraft.network.play.server.S06PacketUpdateHealth
-1 handleScoreboardObjective!(Lnet/minecraft/network/play/server/S3BPacketScoreboardObjective;)V void net.minecraft.network.play.server.S3BPacketScoreboardObjective
-1 handleTeams!(Lnet/minecraft/network/play/server/S3EPacketTeams;)V void net.minecraft.network.play.server.S3EPacketTeams
-1 handleUpdateScore!(Lnet/minecraft/network/play/server/S3CPacketUpdateScore;)V void net.minecraft.network.play.server.S3CPacketUpdateScore
-1 handleSpawnPosition!(Lnet/minecraft/network/play/server/S05PacketSpawnPosition;)V void net.minecraft.network.play.server.S05PacketSpawnPosition
-1 handleTimeUpdate!(Lnet/minecraft/network/play/server/S03PacketTimeUpdate;)V void net.minecraft.network.play.server.S03PacketTimeUpdate
-1 handleTitle!(Lnet/minecraft/network/play/server/S45PacketTitle;)V void net.minecraft.network.play.server.S45PacketTitle
-1 handleUpdateSign!(Lnet/minecraft/network/play/server/S33PacketUpdateSign;)V void net.minecraft.network.play.server.S33PacketUpdateSign
-1 handlePlayerListHeaderFooter!(Lnet/minecraft/network/play/server/S47PacketPlayerListHeaderFooter;)V void net.minecraft.network.play.server.S47PacketPlayerListHeaderFooter
-1 handleCollectItem!(Lnet/minecraft/network/play/server/S0DPacketCollectItem;)V void net.minecraft.network.play.server.S0DPacketCollectItem
-1 handleEntityTeleport!(Lnet/minecraft/network/play/server/S18PacketEntityTeleport;)V void net.minecraft.network.play.server.S18PacketEntityTeleport
-1 handleEntityProperties!(Lnet/minecraft/network/play/server/S20PacketEntityProperties;)V void net.minecraft.network.play.server.S20PacketEntityProperties
-1 handleEntityEffect!(Lnet/minecraft/network/play/server/S1DPacketEntityEffect;)V void net.minecraft.network.play.server.S1DPacketEntityEffect
+1 handlePlayerPosLook!(Lnet/minecraft/network/play/server/SPacketPlayerPosLook;)V void net.minecraft.network.play.server.SPacketPlayerPosLook
+1 handleSpawnObject!(Lnet/minecraft/network/play/server/SPacketSpawnObject;)V void net.minecraft.network.play.server.SPacketSpawnObject
+1 handleSpawnExperienceOrb!(Lnet/minecraft/network/play/server/SPacketSpawnExperienceOrb;)V void net.minecraft.network.play.server.SPacketSpawnExperienceOrb
+1 handleSpawnGlobalEntity!(Lnet/minecraft/network/play/server/SPacketSpawnGlobalEntity;)V void net.minecraft.network.play.server.SPacketSpawnGlobalEntity
+1 handleSpawnMob!(Lnet/minecraft/network/play/server/SPacketSpawnMob;)V void net.minecraft.network.play.server.SPacketSpawnMob
+1 handleSpawnPainting!(Lnet/minecraft/network/play/server/SPacketSpawnPainting;)V void net.minecraft.network.play.server.SPacketSpawnPainting
+1 handleSpawnPlayer!(Lnet/minecraft/network/play/server/SPacketSpawnPlayer;)V void net.minecraft.network.play.server.SPacketSpawnPlayer
+1 handleAnimation!(Lnet/minecraft/network/play/server/SPacketAnimation;)V void net.minecraft.network.play.server.SPacketAnimation
+1 handleStatistics!(Lnet/minecraft/network/play/server/SPacketStatistics;)V void net.minecraft.network.play.server.SPacketStatistics
+1 handleBlockBreakAnim!(Lnet/minecraft/network/play/server/SPacketBlockBreakAnim;)V void net.minecraft.network.play.server.SPacketBlockBreakAnim
+1 handleUpdateTileEntity!(Lnet/minecraft/network/play/server/SPacketUpdateTileEntity;)V void net.minecraft.network.play.server.SPacketUpdateTileEntity
+1 handleBlockAction!(Lnet/minecraft/network/play/server/SPacketBlockAction;)V void net.minecraft.network.play.server.SPacketBlockAction
+1 handleBlockChange!(Lnet/minecraft/network/play/server/SPacketBlockChange;)V void net.minecraft.network.play.server.SPacketBlockChange
+1 handleServerDifficulty!(Lnet/minecraft/network/play/server/SPacketServerDifficulty;)V void net.minecraft.network.play.server.SPacketServerDifficulty
+1 handleTabComplete!(Lnet/minecraft/network/play/server/SPacketTabComplete;)V void net.minecraft.network.play.server.SPacketTabComplete
+1 handleChat!(Lnet/minecraft/network/play/server/SPacketChat;)V void net.minecraft.network.play.server.SPacketChat
+1 handleMultiBlockChange!(Lnet/minecraft/network/play/server/SPacketMultiBlockChange;)V void net.minecraft.network.play.server.SPacketMultiBlockChange
+1 handleConfirmTransaction!(Lnet/minecraft/network/play/server/SPacketConfirmTransaction;)V void net.minecraft.network.play.server.SPacketConfirmTransaction
+1 handleCloseWindow!(Lnet/minecraft/network/play/server/SPacketCloseWindow;)V void net.minecraft.network.play.server.SPacketCloseWindow
+1 handleOpenWindow!(Lnet/minecraft/network/play/server/SPacketOpenWindow;)V void net.minecraft.network.play.server.SPacketOpenWindow
+1 handleWindowItems!(Lnet/minecraft/network/play/server/SPacketWindowItems;)V void net.minecraft.network.play.server.SPacketWindowItems
+1 handleWindowProperty!(Lnet/minecraft/network/play/server/SPacketWindowProperty;)V void net.minecraft.network.play.server.SPacketWindowProperty
+1 handleSetSlot!(Lnet/minecraft/network/play/server/SPacketSetSlot;)V void net.minecraft.network.play.server.SPacketSetSlot
+1 handleCustomPayload!(Lnet/minecraft/network/play/server/SPacketCustomPayload;)V void net.minecraft.network.play.server.SPacketCustomPayload
+1 handleDisconnect!(Lnet/minecraft/network/play/server/SPacketDisconnect;)V void net.minecraft.network.play.server.SPacketDisconnect
+1 handleEntityStatus!(Lnet/minecraft/network/play/server/SPacketEntityStatus;)V void net.minecraft.network.play.server.SPacketEntityStatus
+1 handleEntityNBT!(Lnet/minecraft/network/play/server/SPacketUpdateEntityNBT;)V void net.minecraft.network.play.server.SPacketUpdateEntityNBT
+1 handleExplosion!(Lnet/minecraft/network/play/server/SPacketExplosion;)V void net.minecraft.network.play.server.SPacketExplosion
+1 handleSetCompressionLevel!(Lnet/minecraft/network/play/server/SPacketSetCompressionLevel;)V void net.minecraft.network.play.server.SPacketSetCompressionLevel
+1 handleChangeGameState!(Lnet/minecraft/network/play/server/SPacketChangeGameState;)V void net.minecraft.network.play.server.SPacketChangeGameState
+1 handleKeepAlive!(Lnet/minecraft/network/play/server/SPacketKeepAlive;)V void net.minecraft.network.play.server.SPacketKeepAlive
+1 handleChunkData!(Lnet/minecraft/network/play/server/SPacketChunkData;)V void net.minecraft.network.play.server.SPacketChunkData
+1 handleMapChunkBulk!(Lnet/minecraft/network/play/server/SPacketMapChunkBulk;)V void net.minecraft.network.play.server.SPacketMapChunkBulk
+1 handleEffect!(Lnet/minecraft/network/play/server/SPacketEffect;)V void net.minecraft.network.play.server.SPacketEffect
+1 handleParticles!(Lnet/minecraft/network/play/server/SPacketParticles;)V void net.minecraft.network.play.server.SPacketParticles
+1 handleSoundEffect!(Lnet/minecraft/network/play/server/SPacketSoundEffect;)V void net.minecraft.network.play.server.SPacketSoundEffect
+1 handleJoinGame!(Lnet/minecraft/network/play/server/SPacketJoinGame;)V void net.minecraft.network.play.server.SPacketJoinGame
+1 handleMaps!(Lnet/minecraft/network/play/server/SPacketMaps;)V void net.minecraft.network.play.server.SPacketMaps
+1 handleEntityMovement!(Lnet/minecraft/network/play/server/SPacketEntity;)V void net.minecraft.network.play.server.SPacketEntity
+1 handleSignEditorOpen!(Lnet/minecraft/network/play/server/SPacketSignEditorOpen;)V void net.minecraft.network.play.server.SPacketSignEditorOpen
+1 handlePlayerAbilities!(Lnet/minecraft/network/play/server/SPacketPlayerAbilities;)V void net.minecraft.network.play.server.SPacketPlayerAbilities
+1 handleCombatEvent!(Lnet/minecraft/network/play/server/SPacketCombatEvent;)V void net.minecraft.network.play.server.SPacketCombatEvent
+1 handlePlayerListItem!(Lnet/minecraft/network/play/server/SPacketPlayerListItem;)V void net.minecraft.network.play.server.SPacketPlayerListItem
+1 handleUseBed!(Lnet/minecraft/network/play/server/SPacketUseBed;)V void net.minecraft.network.play.server.SPacketUseBed
+1 handleDestroyEntities!(Lnet/minecraft/network/play/server/SPacketDestroyEntities;)V void net.minecraft.network.play.server.SPacketDestroyEntities
+1 handleRemoveEntityEffect!(Lnet/minecraft/network/play/server/SPacketRemoveEntityEffect;)V void net.minecraft.network.play.server.SPacketRemoveEntityEffect
+1 handleResourcePack!(Lnet/minecraft/network/play/server/SPacketResourcePackSend;)V void net.minecraft.network.play.server.SPacketResourcePackSend
+1 handleRespawn!(Lnet/minecraft/network/play/server/SPacketRespawn;)V void net.minecraft.network.play.server.SPacketRespawn
+1 handleEntityHeadLook!(Lnet/minecraft/network/play/server/SPacketEntityHeadLook;)V void net.minecraft.network.play.server.SPacketEntityHeadLook
+1 handleWorldBorder!(Lnet/minecraft/network/play/server/SPacketWorldBorder;)V void net.minecraft.network.play.server.SPacketWorldBorder
+1 handleCamera!(Lnet/minecraft/network/play/server/SPacketCamera;)V void net.minecraft.network.play.server.SPacketCamera
+1 handleHeldItemChange!(Lnet/minecraft/network/play/server/SPacketHeldItemChange;)V void net.minecraft.network.play.server.SPacketHeldItemChange
+1 handleDisplayScoreboard!(Lnet/minecraft/network/play/server/SPacketDisplayScoreboard;)V void net.minecraft.network.play.server.SPacketDisplayScoreboard
+1 handleEntityMetadata!(Lnet/minecraft/network/play/server/SPacketEntityMetadata;)V void net.minecraft.network.play.server.SPacketEntityMetadata
+1 handleEntityAttach!(Lnet/minecraft/network/play/server/SPacketEntityAttach;)V void net.minecraft.network.play.server.SPacketEntityAttach
+1 handleEntityVelocity!(Lnet/minecraft/network/play/server/SPacketEntityVelocity;)V void net.minecraft.network.play.server.SPacketEntityVelocity
+1 handleEntityEquipment!(Lnet/minecraft/network/play/server/SPacketEntityEquipment;)V void net.minecraft.network.play.server.SPacketEntityEquipment
+1 handleSetExperience!(Lnet/minecraft/network/play/server/SPacketSetExperience;)V void net.minecraft.network.play.server.SPacketSetExperience
+1 handleUpdateHealth!(Lnet/minecraft/network/play/server/SPacketUpdateHealth;)V void net.minecraft.network.play.server.SPacketUpdateHealth
+1 handleScoreboardObjective!(Lnet/minecraft/network/play/server/SPacketScoreboardObjective;)V void net.minecraft.network.play.server.SPacketScoreboardObjective
+1 handleTeams!(Lnet/minecraft/network/play/server/SPacketTeams;)V void net.minecraft.network.play.server.SPacketTeams
+1 handleUpdateScore!(Lnet/minecraft/network/play/server/SPacketUpdateScore;)V void net.minecraft.network.play.server.SPacketUpdateScore
+1 handleSpawnPosition!(Lnet/minecraft/network/play/server/SPacketSpawnPosition;)V void net.minecraft.network.play.server.SPacketSpawnPosition
+1 handleTimeUpdate!(Lnet/minecraft/network/play/server/SPacketTimeUpdate;)V void net.minecraft.network.play.server.SPacketTimeUpdate
+1 handleTitle!(Lnet/minecraft/network/play/server/SPacketTitle;)V void net.minecraft.network.play.server.SPacketTitle
+1 handleUpdateSign!(Lnet/minecraft/network/play/server/SPacketUpdateSign;)V void net.minecraft.network.play.server.SPacketUpdateSign
+1 handlePlayerListHeaderFooter!(Lnet/minecraft/network/play/server/SPacketPlayerListHeaderFooter;)V void net.minecraft.network.play.server.SPacketPlayerListHeaderFooter
+1 handleCollectItem!(Lnet/minecraft/network/play/server/SPacketCollectItem;)V void net.minecraft.network.play.server.SPacketCollectItem
+1 handleEntityTeleport!(Lnet/minecraft/network/play/server/SPacketEntityTeleport;)V void net.minecraft.network.play.server.SPacketEntityTeleport
+1 handleEntityProperties!(Lnet/minecraft/network/play/server/SPacketEntityProperties;)V void net.minecraft.network.play.server.SPacketEntityProperties
+1 handleEntityEffect!(Lnet/minecraft/network/play/server/SPacketEntityEffect;)V void net.minecraft.network.play.server.SPacketEntityEffect
 1 getPlayerInfo!(Ljava/lang/String;)Lnet/minecraft/client/network/NetworkPlayerInfo; net.minecraft.client.network.NetworkPlayerInfo String
 1 getPlayerInfo!(Ljava/util/UUID;)Lnet/minecraft/client/network/NetworkPlayerInfo; net.minecraft.client.network.NetworkPlayerInfo java.util.UUID
 1 cleanup!()V void
@@ -12210,7 +12210,7 @@ net/minecraft/network/EnumPacketDirection java.lang.Enum
 16409 SERVERBOUND net.minecraft.network.EnumPacketDirection
 16409 CLIENTBOUND net.minecraft.network.EnumPacketDirection
 9 values!()[Lnet/minecraft/network/EnumPacketDirection; Array<net.minecraft.network.EnumPacketDirection>
-net/minecraft/network/play/server/S08PacketPlayerPosLook java.lang.Object
+net/minecraft/network/play/server/SPacketPlayerPosLook java.lang.Object
 2 x Double
 2 y Double
 2 z Double
@@ -12226,7 +12226,7 @@ net/minecraft/network/play/server/S08PacketPlayerPosLook java.lang.Object
 1 getZ!()D Double
 1 getYaw!()F Float
 1 getPitch!()F Float
-net/minecraft/network/play/server/S0EPacketSpawnObject java.lang.Object
+net/minecraft/network/play/server/SPacketSpawnObject java.lang.Object
 2 entityId Int
 2 x Int
 2 y Int
@@ -12260,7 +12260,7 @@ net/minecraft/network/play/server/S0EPacketSpawnObject java.lang.Object
 1 getYaw!()I Int
 1 getType!()I Int
 1 func_149009_m!()I Int
-net/minecraft/network/play/server/S11PacketSpawnExperienceOrb java.lang.Object
+net/minecraft/network/play/server/SPacketSpawnExperienceOrb java.lang.Object
 2 entityID Int
 2 posX Int
 2 posY Int
@@ -12275,7 +12275,7 @@ net/minecraft/network/play/server/S11PacketSpawnExperienceOrb java.lang.Object
 1 getY!()I Int
 1 getZ!()I Int
 1 getXPValue!()I Int
-net/minecraft/network/play/server/S2CPacketSpawnGlobalEntity java.lang.Object
+net/minecraft/network/play/server/SPacketSpawnGlobalEntity java.lang.Object
 2 entityId Int
 2 x Int
 2 y Int
@@ -12290,7 +12290,7 @@ net/minecraft/network/play/server/S2CPacketSpawnGlobalEntity java.lang.Object
 1 func_149050_e!()I Int
 1 func_149049_f!()I Int
 1 func_149053_g!()I Int
-net/minecraft/network/play/server/S0FPacketSpawnMob java.lang.Object
+net/minecraft/network/play/server/SPacketSpawnMob java.lang.Object
 2 entityId Int
 2 type Int
 2 x Int
@@ -12319,7 +12319,7 @@ net/minecraft/network/play/server/S0FPacketSpawnMob java.lang.Object
 1 getYaw!()B Byte
 1 getPitch!()B Byte
 1 getHeadPitch!()B Byte
-net/minecraft/network/play/server/S10PacketSpawnPainting java.lang.Object
+net/minecraft/network/play/server/SPacketSpawnPainting java.lang.Object
 2 entityID Int
 2 position net.minecraft.util.BlockPos
 2 facing net.minecraft.util.EnumFacing
@@ -12332,7 +12332,7 @@ net/minecraft/network/play/server/S10PacketSpawnPainting java.lang.Object
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getFacing!()Lnet/minecraft/util/EnumFacing; net.minecraft.util.EnumFacing
 1 getTitle!()Ljava/lang/String; String
-net/minecraft/network/play/server/S0CPacketSpawnPlayer java.lang.Object
+net/minecraft/network/play/server/SPacketSpawnPlayer java.lang.Object
 2 entityId Int
 2 playerId java.util.UUID
 2 x Int
@@ -12355,7 +12355,7 @@ net/minecraft/network/play/server/S0CPacketSpawnPlayer java.lang.Object
 1 getYaw!()B Byte
 1 getPitch!()B Byte
 1 getCurrentItemID!()I Int
-net/minecraft/network/play/server/S0BPacketAnimation java.lang.Object
+net/minecraft/network/play/server/SPacketAnimation java.lang.Object
 2 entityId Int
 2 type Int
 1 getEntityID!()I Int
@@ -12364,13 +12364,13 @@ net/minecraft/network/play/server/S0BPacketAnimation java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 getAnimationType!()I Int
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S37PacketStatistics java.lang.Object
+net/minecraft/network/play/server/SPacketStatistics java.lang.Object
 2 field_148976_a java.util.Map<*, *>
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S25PacketBlockBreakAnim java.lang.Object
+net/minecraft/network/play/server/SPacketBlockBreakAnim java.lang.Object
 2 breakerId Int
 2 position net.minecraft.util.BlockPos
 2 progress Int
@@ -12381,7 +12381,7 @@ net/minecraft/network/play/server/S25PacketBlockBreakAnim java.lang.Object
 1 getPosition!()Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getProgress!()I Int
-net/minecraft/network/play/server/S35PacketUpdateTileEntity java.lang.Object
+net/minecraft/network/play/server/SPacketUpdateTileEntity java.lang.Object
 2 blockPos net.minecraft.util.BlockPos
 2 metadata Int
 2 nbt net.minecraft.nbt.NBTTagCompound
@@ -12392,7 +12392,7 @@ net/minecraft/network/play/server/S35PacketUpdateTileEntity java.lang.Object
 1 getTileEntityType!()I Int
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getNbtCompound!()Lnet/minecraft/nbt/NBTTagCompound; net.minecraft.nbt.NBTTagCompound
-net/minecraft/network/play/server/S24PacketBlockAction java.lang.Object
+net/minecraft/network/play/server/SPacketBlockAction java.lang.Object
 2 blockPosition net.minecraft.util.BlockPos
 2 instrument Int
 2 pitch Int
@@ -12405,7 +12405,7 @@ net/minecraft/network/play/server/S24PacketBlockAction java.lang.Object
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getData2!()I Int
 1 getBlockType!()Lnet/minecraft/block/Block; net.minecraft.block.Block
-net/minecraft/network/play/server/S23PacketBlockChange java.lang.Object
+net/minecraft/network/play/server/SPacketBlockChange java.lang.Object
 2 blockPosition net.minecraft.util.BlockPos
 1 blockState net.minecraft.block.state.IBlockState
 1 getBlockState!()Lnet/minecraft/block/state/IBlockState; net.minecraft.block.state.IBlockState
@@ -12414,7 +12414,7 @@ net/minecraft/network/play/server/S23PacketBlockChange java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 getBlockPosition!()Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S41PacketServerDifficulty java.lang.Object
+net/minecraft/network/play/server/SPacketServerDifficulty java.lang.Object
 2 difficulty net.minecraft.world.EnumDifficulty
 2 difficultyLocked Boolean
 1 isDifficultyLocked!()Z Boolean
@@ -12423,14 +12423,14 @@ net/minecraft/network/play/server/S41PacketServerDifficulty java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 getDifficulty!()Lnet/minecraft/world/EnumDifficulty; net.minecraft.world.EnumDifficulty
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S3APacketTabComplete java.lang.Object
+net/minecraft/network/play/server/SPacketTabComplete java.lang.Object
 2 matches Array<String>
 1 func_149630_c!()[Ljava/lang/String; Array<String>
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S02PacketChat java.lang.Object
+net/minecraft/network/play/server/SPacketChat java.lang.Object
 2 chatComponent net.minecraft.util.IChatComponent
 2 type Byte
 1 getChatComponent!()Lnet/minecraft/util/IChatComponent; net.minecraft.util.IChatComponent
@@ -12440,15 +12440,15 @@ net/minecraft/network/play/server/S02PacketChat java.lang.Object
 1 isChat!()Z Boolean
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getType!()B Byte
-net/minecraft/network/play/server/S22PacketMultiBlockChange java.lang.Object
+net/minecraft/network/play/server/SPacketMultiBlockChange java.lang.Object
 2 chunkPosCoord net.minecraft.world.ChunkCoordIntPair
-2 changedBlocks Array<net.minecraft.network.play.server.S22PacketMultiBlockChange.BlockUpdateData>
-1 getChangedBlocks!()[Lnet/minecraft/network/play/server/S22PacketMultiBlockChange$BlockUpdateData; Array<net.minecraft.network.play.server.S22PacketMultiBlockChange.BlockUpdateData>
+2 changedBlocks Array<net.minecraft.network.play.server.SPacketMultiBlockChange.BlockUpdateData>
+1 getChangedBlocks!()[Lnet/minecraft/network/play/server/SPacketMultiBlockChange$BlockUpdateData; Array<net.minecraft.network.play.server.SPacketMultiBlockChange.BlockUpdateData>
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S32PacketConfirmTransaction java.lang.Object
+net/minecraft/network/play/server/SPacketConfirmTransaction java.lang.Object
 2 windowId Int
 2 actionNumber Short
 2 field_148893_c Boolean
@@ -12459,13 +12459,13 @@ net/minecraft/network/play/server/S32PacketConfirmTransaction java.lang.Object
 1 getActionNumber!()S Short
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 func_148888_e!()Z Boolean
-net/minecraft/network/play/server/S2EPacketCloseWindow java.lang.Object
+net/minecraft/network/play/server/SPacketCloseWindow java.lang.Object
 1 windowId Int
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S2DPacketOpenWindow java.lang.Object
+net/minecraft/network/play/server/SPacketOpenWindow java.lang.Object
 2 windowId Int
 2 inventoryType String
 2 windowTitle net.minecraft.util.IChatComponent
@@ -12481,7 +12481,7 @@ net/minecraft/network/play/server/S2DPacketOpenWindow java.lang.Object
 1 getSlotCount!()I Int
 1 getEntityId!()I Int
 1 hasSlots!()Z Boolean
-net/minecraft/network/play/server/S30PacketWindowItems java.lang.Object
+net/minecraft/network/play/server/SPacketWindowItems java.lang.Object
 2 windowId Int
 2 itemStacks Array<net.minecraft.item.ItemStack>
 1 func_148911_c!()I Int
@@ -12490,7 +12490,7 @@ net/minecraft/network/play/server/S30PacketWindowItems java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 getItemStacks!()[Lnet/minecraft/item/ItemStack; Array<net.minecraft.item.ItemStack>
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S31PacketWindowProperty java.lang.Object
+net/minecraft/network/play/server/SPacketWindowProperty java.lang.Object
 2 windowId Int
 2 varIndex Int
 2 varValue Int
@@ -12501,7 +12501,7 @@ net/minecraft/network/play/server/S31PacketWindowProperty java.lang.Object
 1 getVarIndex!()I Int
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getVarValue!()I Int
-net/minecraft/network/play/server/S2FPacketSetSlot java.lang.Object
+net/minecraft/network/play/server/SPacketSetSlot java.lang.Object
 2 windowId Int
 2 slot Int
 2 item net.minecraft.item.ItemStack
@@ -12512,7 +12512,7 @@ net/minecraft/network/play/server/S2FPacketSetSlot java.lang.Object
 1 func_149173_d!()I Int
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 func_149174_e!()Lnet/minecraft/item/ItemStack; net.minecraft.item.ItemStack
-net/minecraft/network/play/server/S3FPacketCustomPayload java.lang.Object
+net/minecraft/network/play/server/SPacketCustomPayload java.lang.Object
 2 channel String
 2 data net.minecraft.network.PacketBuffer
 1 getChannelName!()Ljava/lang/String; String
@@ -12521,14 +12521,14 @@ net/minecraft/network/play/server/S3FPacketCustomPayload java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 getBufferData!()Lnet/minecraft/network/PacketBuffer; net.minecraft.network.PacketBuffer
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S40PacketDisconnect java.lang.Object
+net/minecraft/network/play/server/SPacketDisconnect java.lang.Object
 2 reason net.minecraft.util.IChatComponent
 1 getReason!()Lnet/minecraft/util/IChatComponent; net.minecraft.util.IChatComponent
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S19PacketEntityStatus java.lang.Object
+net/minecraft/network/play/server/SPacketEntityStatus java.lang.Object
 2 entityId Int
 2 logicOpcode Byte
 1 getOpCode!()B Byte
@@ -12537,7 +12537,7 @@ net/minecraft/network/play/server/S19PacketEntityStatus java.lang.Object
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S49PacketUpdateEntityNBT java.lang.Object
+net/minecraft/network/play/server/SPacketUpdateEntityNBT java.lang.Object
 2 entityId Int
 2 tagCompound net.minecraft.nbt.NBTTagCompound
 1 getTagCompound!()Lnet/minecraft/nbt/NBTTagCompound; net.minecraft.nbt.NBTTagCompound
@@ -12546,7 +12546,7 @@ net/minecraft/network/play/server/S49PacketUpdateEntityNBT java.lang.Object
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S27PacketExplosion java.lang.Object
+net/minecraft/network/play/server/SPacketExplosion java.lang.Object
 2 posX Double
 2 posY Double
 2 posZ Double
@@ -12566,14 +12566,14 @@ net/minecraft/network/play/server/S27PacketExplosion java.lang.Object
 1 getY!()D Double
 1 getZ!()D Double
 1 getStrength!()F Float
-net/minecraft/network/play/server/S46PacketSetCompressionLevel java.lang.Object
+net/minecraft/network/play/server/SPacketSetCompressionLevel java.lang.Object
 2 threshold Int
 1 getThreshold!()I Int
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S2BPacketChangeGameState java.lang.Object
+net/minecraft/network/play/server/SPacketChangeGameState java.lang.Object
 25 MESSAGE_NAMES Array<String>
 2 state Int
 2 field_149141_c Float
@@ -12583,21 +12583,21 @@ net/minecraft/network/play/server/S2BPacketChangeGameState java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 func_149137_d!()F Float
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S00PacketKeepAlive java.lang.Object
+net/minecraft/network/play/server/SPacketKeepAlive java.lang.Object
 2 id Int
 1 func_149134_c!()I Int
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S21PacketChunkData java.lang.Object
+net/minecraft/network/play/server/SPacketChunkData java.lang.Object
 2 chunkX Int
 2 chunkZ Int
-2 extractedData net.minecraft.network.play.server.S21PacketChunkData.Extracted
+2 extractedData net.minecraft.network.play.server.SPacketChunkData.Extracted
 2 field_149279_g Boolean
 1 getExtractedDataBytes!()[B Array<Byte>
 12 func_180737_a!(IZZ)I Int Int;Boolean;Boolean
-9 getExtractedData!(Lnet/minecraft/world/chunk/Chunk;ZZI)Lnet/minecraft/network/play/server/S21PacketChunkData$Extracted; net.minecraft.network.play.server.S21PacketChunkData.Extracted net.minecraft.world.chunk.Chunk;Boolean;Boolean;Int
+9 getExtractedData!(Lnet/minecraft/world/chunk/Chunk;ZZI)Lnet/minecraft/network/play/server/SPacketChunkData$Extracted; net.minecraft.network.play.server.SPacketChunkData.Extracted net.minecraft.world.chunk.Chunk;Boolean;Boolean;Int
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
@@ -12607,10 +12607,10 @@ net/minecraft/network/play/server/S21PacketChunkData java.lang.Object
 1 getChunkZ!()I Int
 1 getExtractedSize!()I Int
 1 func_149274_i!()Z Boolean
-net/minecraft/network/play/server/S26PacketMapChunkBulk java.lang.Object
+net/minecraft/network/play/server/SPacketMapChunkBulk java.lang.Object
 2 xPositions Array<Int>
 2 zPositions Array<Int>
-2 chunksData Array<net.minecraft.network.play.server.S21PacketChunkData.Extracted>
+2 chunksData Array<net.minecraft.network.play.server.SPacketChunkData.Extracted>
 2 isOverworld Boolean
 1 getChunkCount!()I Int
 1 getChunkX!(I)I Int Int
@@ -12621,7 +12621,7 @@ net/minecraft/network/play/server/S26PacketMapChunkBulk java.lang.Object
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getChunkBytes!(I)[B Array<Byte> Int
 1 getChunkSize!(I)I Int Int
-net/minecraft/network/play/server/S28PacketEffect java.lang.Object
+net/minecraft/network/play/server/SPacketEffect java.lang.Object
 2 soundType Int
 2 soundPos net.minecraft.util.BlockPos
 2 soundData Int
@@ -12634,7 +12634,7 @@ net/minecraft/network/play/server/S28PacketEffect java.lang.Object
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getSoundData!()I Int
 1 getSoundPos!()Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos
-net/minecraft/network/play/server/S2APacketParticles java.lang.Object
+net/minecraft/network/play/server/SPacketParticles java.lang.Object
 2 particleType net.minecraft.util.EnumParticleTypes
 2 xCoord Float
 2 yCoord Float
@@ -12661,7 +12661,7 @@ net/minecraft/network/play/server/S2APacketParticles java.lang.Object
 1 getParticleSpeed!()F Float
 1 getParticleCount!()I Int
 1 getParticleArgs!()[I Array<Int>
-net/minecraft/network/play/server/S29PacketSoundEffect java.lang.Object
+net/minecraft/network/play/server/SPacketSoundEffect java.lang.Object
 2 soundName String
 2 posX Int
 2 posY Int
@@ -12678,7 +12678,7 @@ net/minecraft/network/play/server/S29PacketSoundEffect java.lang.Object
 1 getZ!()D Double
 1 getVolume!()F Float
 1 getPitch!()F Float
-net/minecraft/network/play/server/S01PacketJoinGame java.lang.Object
+net/minecraft/network/play/server/SPacketJoinGame java.lang.Object
 2 entityId Int
 2 hardcoreMode Boolean
 2 gameType net.minecraft.world.WorldSettings.GameType
@@ -12699,7 +12699,7 @@ net/minecraft/network/play/server/S01PacketJoinGame java.lang.Object
 1 getMaxPlayers!()I Int
 1 getWorldType!()Lnet/minecraft/world/WorldType; net.minecraft.world.WorldType
 1 isReducedDebugInfo!()Z Boolean
-net/minecraft/network/play/server/S34PacketMaps java.lang.Object
+net/minecraft/network/play/server/SPacketMaps java.lang.Object
 2 mapId Int
 2 mapScale Byte
 2 mapVisiblePlayersVec4b Array<net.minecraft.util.Vec4b>
@@ -12714,7 +12714,7 @@ net/minecraft/network/play/server/S34PacketMaps java.lang.Object
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S14PacketEntity java.lang.Object
+net/minecraft/network/play/server/SPacketEntity java.lang.Object
 4 entityId Int
 4 posX Byte
 4 posY Byte
@@ -12736,14 +12736,14 @@ net/minecraft/network/play/server/S14PacketEntity java.lang.Object
 1 func_149060_h!()Z Boolean
 1 getOnGround!()Z Boolean
 1 toString!()Ljava/lang/String; String
-net/minecraft/network/play/server/S36PacketSignEditorOpen java.lang.Object
+net/minecraft/network/play/server/SPacketSignEditorOpen java.lang.Object
 2 signPosition net.minecraft.util.BlockPos
 1 getSignPosition!()Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S39PacketPlayerAbilities java.lang.Object
+net/minecraft/network/play/server/SPacketPlayerAbilities java.lang.Object
 2 invulnerable Boolean
 2 flying Boolean
 2 allowFlying Boolean
@@ -12766,8 +12766,8 @@ net/minecraft/network/play/server/S39PacketPlayerAbilities java.lang.Object
 1 setCreativeMode!(Z)V void Boolean
 1 getFlySpeed!()F Float
 1 getWalkSpeed!()F Float
-net/minecraft/network/play/server/S42PacketCombatEvent java.lang.Object
-1 eventType net.minecraft.network.play.server.S42PacketCombatEvent.Event
+net/minecraft/network/play/server/SPacketCombatEvent java.lang.Object
+1 eventType net.minecraft.network.play.server.SPacketCombatEvent.Event
 1 field_179774_b Int
 1 field_179775_c Int
 1 field_179772_d Int
@@ -12776,16 +12776,16 @@ net/minecraft/network/play/server/S42PacketCombatEvent java.lang.Object
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S38PacketPlayerListItem java.lang.Object
-2 action net.minecraft.network.play.server.S38PacketPlayerListItem.Action
+net/minecraft/network/play/server/SPacketPlayerListItem java.lang.Object
+2 action net.minecraft.network.play.server.SPacketPlayerListItem.Action
 18 players java.util.List<*>
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
-1 getAction!()Lnet/minecraft/network/play/server/S38PacketPlayerListItem$Action; net.minecraft.network.play.server.S38PacketPlayerListItem.Action
+1 getAction!()Lnet/minecraft/network/play/server/SPacketPlayerListItem$Action; net.minecraft.network.play.server.SPacketPlayerListItem.Action
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 toString!()Ljava/lang/String; String
-net/minecraft/network/play/server/S0APacketUseBed java.lang.Object
+net/minecraft/network/play/server/SPacketUseBed java.lang.Object
 2 playerID Int
 2 bedPos net.minecraft.util.BlockPos
 1 getBedPosition!()Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos
@@ -12794,14 +12794,14 @@ net/minecraft/network/play/server/S0APacketUseBed java.lang.Object
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S13PacketDestroyEntities java.lang.Object
+net/minecraft/network/play/server/SPacketDestroyEntities java.lang.Object
 2 entityIDs Array<Int>
 1 getEntityIDs!()[I Array<Int>
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S1EPacketRemoveEntityEffect java.lang.Object
+net/minecraft/network/play/server/SPacketRemoveEntityEffect java.lang.Object
 2 entityId Int
 2 effectId Int
 1 getEntityId!()I Int
@@ -12810,7 +12810,7 @@ net/minecraft/network/play/server/S1EPacketRemoveEntityEffect java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 getEffectId!()I Int
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S48PacketResourcePackSend java.lang.Object
+net/minecraft/network/play/server/SPacketResourcePackSend java.lang.Object
 2 url String
 2 hash String
 1 getURL!()Ljava/lang/String; String
@@ -12819,7 +12819,7 @@ net/minecraft/network/play/server/S48PacketResourcePackSend java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 getHash!()Ljava/lang/String; String
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S07PacketRespawn java.lang.Object
+net/minecraft/network/play/server/SPacketRespawn java.lang.Object
 2 dimensionID Int
 2 difficulty net.minecraft.world.EnumDifficulty
 2 gameType net.minecraft.world.WorldSettings.GameType
@@ -12832,7 +12832,7 @@ net/minecraft/network/play/server/S07PacketRespawn java.lang.Object
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getGameType!()Lnet/minecraft/world/WorldSettings$GameType; net.minecraft.world.WorldSettings.GameType
 1 getWorldType!()Lnet/minecraft/world/WorldType; net.minecraft.world.WorldType
-net/minecraft/network/play/server/S19PacketEntityHeadLook java.lang.Object
+net/minecraft/network/play/server/SPacketEntityHeadLook java.lang.Object
 2 entityId Int
 2 yaw Byte
 1 getYaw!()B Byte
@@ -12841,8 +12841,8 @@ net/minecraft/network/play/server/S19PacketEntityHeadLook java.lang.Object
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S44PacketWorldBorder java.lang.Object
-2 action net.minecraft.network.play.server.S44PacketWorldBorder.Action
+net/minecraft/network/play/server/SPacketWorldBorder java.lang.Object
+2 action net.minecraft.network.play.server.SPacketWorldBorder.Action
 2 size Int
 2 centerX Double
 2 centerZ Double
@@ -12856,21 +12856,21 @@ net/minecraft/network/play/server/S44PacketWorldBorder java.lang.Object
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S43PacketCamera java.lang.Object
+net/minecraft/network/play/server/SPacketCamera java.lang.Object
 1 entityId Int
 1 getEntity!(Lnet/minecraft/world/World;)Lnet/minecraft/entity/Entity; net.minecraft.entity.Entity net.minecraft.world.World
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S09PacketHeldItemChange java.lang.Object
+net/minecraft/network/play/server/SPacketHeldItemChange java.lang.Object
 2 heldItemHotbarIndex Int
 1 getHeldItemHotbarIndex!()I Int
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S3DPacketDisplayScoreboard java.lang.Object
+net/minecraft/network/play/server/SPacketDisplayScoreboard java.lang.Object
 2 position Int
 2 scoreName String
 1 func_149371_c!()I Int
@@ -12879,7 +12879,7 @@ net/minecraft/network/play/server/S3DPacketDisplayScoreboard java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 func_149370_d!()Ljava/lang/String; String
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S1CPacketEntityMetadata java.lang.Object
+net/minecraft/network/play/server/SPacketEntityMetadata java.lang.Object
 2 entityId Int
 2 field_149378_b java.util.List<*>
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
@@ -12887,7 +12887,7 @@ net/minecraft/network/play/server/S1CPacketEntityMetadata java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 getEntityId!()I Int
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S1BPacketEntityAttach java.lang.Object
+net/minecraft/network/play/server/SPacketEntityAttach java.lang.Object
 2 leash Int
 2 entityId Int
 2 vehicleEntityId Int
@@ -12898,7 +12898,7 @@ net/minecraft/network/play/server/S1BPacketEntityAttach java.lang.Object
 1 getEntityId!()I Int
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getVehicleEntityId!()I Int
-net/minecraft/network/play/server/S12PacketEntityVelocity java.lang.Object
+net/minecraft/network/play/server/SPacketEntityVelocity java.lang.Object
 2 entityID Int
 1 motionX Int
 1 motionY Int
@@ -12911,7 +12911,7 @@ net/minecraft/network/play/server/S12PacketEntityVelocity java.lang.Object
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getMotionY!()I Int
 1 getMotionZ!()I Int
-net/minecraft/network/play/server/S04PacketEntityEquipment java.lang.Object
+net/minecraft/network/play/server/SPacketEntityEquipment java.lang.Object
 2 entityID Int
 2 equipmentSlot Int
 2 itemStack net.minecraft.item.ItemStack
@@ -12922,7 +12922,7 @@ net/minecraft/network/play/server/S04PacketEntityEquipment java.lang.Object
 1 getEntityID!()I Int
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getEquipmentSlot!()I Int
-net/minecraft/network/play/server/S1FPacketSetExperience java.lang.Object
+net/minecraft/network/play/server/SPacketSetExperience java.lang.Object
 2 field_149401_a Float
 2 totalExperience Int
 2 level Int
@@ -12933,7 +12933,7 @@ net/minecraft/network/play/server/S1FPacketSetExperience java.lang.Object
 1 getTotalExperience!()I Int
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getLevel!()I Int
-net/minecraft/network/play/server/S06PacketUpdateHealth java.lang.Object
+net/minecraft/network/play/server/SPacketUpdateHealth java.lang.Object
 2 health Float
 2 foodLevel Int
 2 saturationLevel Float
@@ -12944,7 +12944,7 @@ net/minecraft/network/play/server/S06PacketUpdateHealth java.lang.Object
 1 getFoodLevel!()I Int
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getSaturationLevel!()F Float
-net/minecraft/network/play/server/S3BPacketScoreboardObjective java.lang.Object
+net/minecraft/network/play/server/SPacketScoreboardObjective java.lang.Object
 2 objectiveName String
 2 objectiveValue String
 2 type net.minecraft.scoreboard.IScoreObjectiveCriteria.EnumRenderType
@@ -12957,7 +12957,7 @@ net/minecraft/network/play/server/S3BPacketScoreboardObjective java.lang.Object
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 func_149338_e!()I Int
 1 func_179817_d!()Lnet/minecraft/scoreboard/IScoreObjectiveCriteria$EnumRenderType; net.minecraft.scoreboard.IScoreObjectiveCriteria.EnumRenderType
-net/minecraft/network/play/server/S3EPacketTeams java.lang.Object
+net/minecraft/network/play/server/SPacketTeams java.lang.Object
 2 name String
 2 displayName String
 2 prefix String
@@ -12979,11 +12979,11 @@ net/minecraft/network/play/server/S3EPacketTeams java.lang.Object
 1 getFriendlyFlags!()I Int
 1 getColor!()I Int
 1 getNameTagVisibility!()Ljava/lang/String; String
-net/minecraft/network/play/server/S3CPacketUpdateScore java.lang.Object
+net/minecraft/network/play/server/SPacketUpdateScore java.lang.Object
 2 name String
 2 objective String
 2 value Int
-2 action net.minecraft.network.play.server.S3CPacketUpdateScore.Action
+2 action net.minecraft.network.play.server.SPacketUpdateScore.Action
 1 getPlayerName!()Ljava/lang/String; String
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
@@ -12991,15 +12991,15 @@ net/minecraft/network/play/server/S3CPacketUpdateScore java.lang.Object
 1 getObjectiveName!()Ljava/lang/String; String
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getScoreValue!()I Int
-1 getScoreAction!()Lnet/minecraft/network/play/server/S3CPacketUpdateScore$Action; net.minecraft.network.play.server.S3CPacketUpdateScore.Action
-net/minecraft/network/play/server/S05PacketSpawnPosition java.lang.Object
+1 getScoreAction!()Lnet/minecraft/network/play/server/SPacketUpdateScore$Action; net.minecraft.network.play.server.SPacketUpdateScore.Action
+net/minecraft/network/play/server/SPacketSpawnPosition java.lang.Object
 2 spawnBlockPos net.minecraft.util.BlockPos
 1 getSpawnPos!()Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S03PacketTimeUpdate java.lang.Object
+net/minecraft/network/play/server/SPacketTimeUpdate java.lang.Object
 2 totalWorldTime Long
 2 worldTime Long
 1 getTotalWorldTime!()J Long
@@ -13008,13 +13008,13 @@ net/minecraft/network/play/server/S03PacketTimeUpdate java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 getWorldTime!()J Long
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S45PacketTitle java.lang.Object
-2 type net.minecraft.network.play.server.S45PacketTitle.Type
+net/minecraft/network/play/server/SPacketTitle java.lang.Object
+2 type net.minecraft.network.play.server.SPacketTitle.Type
 2 message net.minecraft.util.IChatComponent
 2 fadeInTime Int
 2 displayTime Int
 2 fadeOutTime Int
-1 getType!()Lnet/minecraft/network/play/server/S45PacketTitle$Type; net.minecraft.network.play.server.S45PacketTitle.Type
+1 getType!()Lnet/minecraft/network/play/server/SPacketTitle$Type; net.minecraft.network.play.server.SPacketTitle.Type
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
@@ -13023,7 +13023,7 @@ net/minecraft/network/play/server/S45PacketTitle java.lang.Object
 1 getFadeInTime!()I Int
 1 getDisplayTime!()I Int
 1 getFadeOutTime!()I Int
-net/minecraft/network/play/server/S33PacketUpdateSign java.lang.Object
+net/minecraft/network/play/server/SPacketUpdateSign java.lang.Object
 2 world net.minecraft.world.World
 2 blockPos net.minecraft.util.BlockPos
 2 lines Array<net.minecraft.util.IChatComponent>
@@ -13033,7 +13033,7 @@ net/minecraft/network/play/server/S33PacketUpdateSign java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 getLines!()[Lnet/minecraft/util/IChatComponent; Array<net.minecraft.util.IChatComponent>
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S47PacketPlayerListHeaderFooter java.lang.Object
+net/minecraft/network/play/server/SPacketPlayerListHeaderFooter java.lang.Object
 2 header net.minecraft.util.IChatComponent
 2 footer net.minecraft.util.IChatComponent
 1 getHeader!()Lnet/minecraft/util/IChatComponent; net.minecraft.util.IChatComponent
@@ -13042,7 +13042,7 @@ net/minecraft/network/play/server/S47PacketPlayerListHeaderFooter java.lang.Obje
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 getFooter!()Lnet/minecraft/util/IChatComponent; net.minecraft.util.IChatComponent
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S0DPacketCollectItem java.lang.Object
+net/minecraft/network/play/server/SPacketCollectItem java.lang.Object
 2 collectedItemEntityId Int
 2 entityId Int
 1 getCollectedItemEntityID!()I Int
@@ -13051,7 +13051,7 @@ net/minecraft/network/play/server/S0DPacketCollectItem java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 getEntityID!()I Int
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S18PacketEntityTeleport java.lang.Object
+net/minecraft/network/play/server/SPacketEntityTeleport java.lang.Object
 2 entityId Int
 2 posX Int
 2 posY Int
@@ -13106,7 +13106,7 @@ net/minecraft/command/CommandBase java.lang.Object
 9 getEntityName!(Lnet/minecraft/command/ICommandSender;Ljava/lang/String;)Ljava/lang/String; String net.minecraft.command.ICommandSender;String
 9 getItemByText!(Lnet/minecraft/command/ICommandSender;Ljava/lang/String;)Lnet/minecraft/item/Item; net.minecraft.item.Item net.minecraft.command.ICommandSender;String
 9 getBlockByText!(Lnet/minecraft/command/ICommandSender;Ljava/lang/String;)Lnet/minecraft/block/Block; net.minecraft.block.Block net.minecraft.command.ICommandSender;String
-net/minecraft/network/play/server/S20PacketEntityProperties java.lang.Object
+net/minecraft/network/play/server/SPacketEntityProperties java.lang.Object
 2 entityId Int
 18 field_149444_b java.util.List<*>
 1 getEntityId!()I Int
@@ -13114,7 +13114,7 @@ net/minecraft/network/play/server/S20PacketEntityProperties java.lang.Object
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayClient;)V void net.minecraft.network.play.INetHandlerPlayClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/server/S1DPacketEntityEffect java.lang.Object
+net/minecraft/network/play/server/SPacketEntityEffect java.lang.Object
 2 entityId Int
 2 effectId Byte
 2 amplifier Byte
@@ -13130,7 +13130,7 @@ net/minecraft/network/play/server/S1DPacketEntityEffect java.lang.Object
 1 getAmplifier!()B Byte
 1 getDuration!()I Int
 1 func_179707_f!()Z Boolean
-net/minecraft/network/play/client/C14PacketTabComplete java.lang.Object
+net/minecraft/network/play/client/CPacketTabComplete java.lang.Object
 2 message String
 2 targetBlock net.minecraft.util.BlockPos
 1 getMessage!()Ljava/lang/String; String
@@ -13139,21 +13139,21 @@ net/minecraft/network/play/client/C14PacketTabComplete java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayServer;)V void net.minecraft.network.play.INetHandlerPlayServer
 1 getTargetBlock!()Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/client/C01PacketChatMessage java.lang.Object
+net/minecraft/network/play/client/CPacketChatMessage java.lang.Object
 1 message String
 1 getMessage!()Ljava/lang/String; String
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayServer;)V void net.minecraft.network.play.INetHandlerPlayServer
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/client/C16PacketClientStatus java.lang.Object
-2 status net.minecraft.network.play.client.C16PacketClientStatus.EnumState
-1 getStatus!()Lnet/minecraft/network/play/client/C16PacketClientStatus$EnumState; net.minecraft.network.play.client.C16PacketClientStatus.EnumState
+net/minecraft/network/play/client/CPacketClientStatus java.lang.Object
+2 status net.minecraft.network.play.client.CPacketClientStatus.EnumState
+1 getStatus!()Lnet/minecraft/network/play/client/CPacketClientStatus$EnumState; net.minecraft.network.play.client.CPacketClientStatus.EnumState
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayServer;)V void net.minecraft.network.play.INetHandlerPlayServer
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/client/C15PacketClientSettings java.lang.Object
+net/minecraft/network/play/client/CPacketClientSettings java.lang.Object
 2 lang String
 2 view Int
 2 chatVisibility net.minecraft.entity.player.EntityPlayer.EnumChatVisibility
@@ -13167,7 +13167,7 @@ net/minecraft/network/play/client/C15PacketClientSettings java.lang.Object
 1 getChatVisibility!()Lnet/minecraft/entity/player/EntityPlayer$EnumChatVisibility; net.minecraft.entity.player.EntityPlayer.EnumChatVisibility
 1 isColorsEnabled!()Z Boolean
 1 getModelPartFlags!()I Int
-net/minecraft/network/play/client/C0FPacketConfirmTransaction java.lang.Object
+net/minecraft/network/play/client/CPacketConfirmTransaction java.lang.Object
 2 windowId Int
 2 uid Short
 2 accepted Boolean
@@ -13177,7 +13177,7 @@ net/minecraft/network/play/client/C0FPacketConfirmTransaction java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayServer;)V void net.minecraft.network.play.INetHandlerPlayServer
 1 getUid!()S Short
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/client/C11PacketEnchantItem java.lang.Object
+net/minecraft/network/play/client/CPacketEnchantItem java.lang.Object
 2 windowId Int
 2 button Int
 1 getWindowId!()I Int
@@ -13186,7 +13186,7 @@ net/minecraft/network/play/client/C11PacketEnchantItem java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayServer;)V void net.minecraft.network.play.INetHandlerPlayServer
 1 getButton!()I Int
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/client/C0EPacketClickWindow java.lang.Object
+net/minecraft/network/play/client/CPacketClickWindow java.lang.Object
 2 windowId Int
 2 slotId Int
 2 usedButton Int
@@ -13203,13 +13203,13 @@ net/minecraft/network/play/client/C0EPacketClickWindow java.lang.Object
 1 getActionNumber!()S Short
 1 getClickedItem!()Lnet/minecraft/item/ItemStack; net.minecraft.item.ItemStack
 1 getMode!()I Int
-net/minecraft/network/play/client/C0DPacketCloseWindow java.lang.Object
+net/minecraft/network/play/client/CPacketCloseWindow java.lang.Object
 2 windowId Int
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayServer;)V void net.minecraft.network.play.INetHandlerPlayServer
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/client/C17PacketCustomPayload java.lang.Object
+net/minecraft/network/play/client/CPacketCustomPayload java.lang.Object
 2 channel String
 1 data net.minecraft.network.PacketBuffer
 1 getChannelName!()Ljava/lang/String; String
@@ -13218,25 +13218,25 @@ net/minecraft/network/play/client/C17PacketCustomPayload java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayServer;)V void net.minecraft.network.play.INetHandlerPlayServer
 1 getBufferData!()Lnet/minecraft/network/PacketBuffer; net.minecraft.network.PacketBuffer
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/client/C02PacketUseEntity java.lang.Object
+net/minecraft/network/play/client/CPacketUseEntity java.lang.Object
 2 entityId Int
-2 action net.minecraft.network.play.client.C02PacketUseEntity.Action
+2 action net.minecraft.network.play.client.CPacketUseEntity.Action
 2 hitVec net.minecraft.util.Vec3
-1 getAction!()Lnet/minecraft/network/play/client/C02PacketUseEntity$Action; net.minecraft.network.play.client.C02PacketUseEntity.Action
+1 getAction!()Lnet/minecraft/network/play/client/CPacketUseEntity$Action; net.minecraft.network.play.client.CPacketUseEntity.Action
 1 getEntityFromWorld!(Lnet/minecraft/world/World;)Lnet/minecraft/entity/Entity; net.minecraft.entity.Entity net.minecraft.world.World
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayServer;)V void net.minecraft.network.play.INetHandlerPlayServer
 1 getHitVec!()Lnet/minecraft/util/Vec3; net.minecraft.util.Vec3
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/client/C00PacketKeepAlive java.lang.Object
+net/minecraft/network/play/client/CPacketKeepAlive java.lang.Object
 2 key Int
 1 getKey!()I Int
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayServer;)V void net.minecraft.network.play.INetHandlerPlayServer
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/client/C03PacketPlayer java.lang.Object
+net/minecraft/network/play/client/CPacketPlayer java.lang.Object
 1 x Double
 1 y Double
 1 z Double
@@ -13258,7 +13258,7 @@ net/minecraft/network/play/client/C03PacketPlayer java.lang.Object
 1 isOnGround!()Z Boolean
 1 isMoving!()Z Boolean
 1 getRotating!()Z Boolean
-net/minecraft/network/play/client/C13PacketPlayerAbilities java.lang.Object
+net/minecraft/network/play/client/CPacketPlayerAbilities java.lang.Object
 2 invulnerable Boolean
 2 flying Boolean
 2 allowFlying Boolean
@@ -13279,28 +13279,28 @@ net/minecraft/network/play/client/C13PacketPlayerAbilities java.lang.Object
 1 setAllowFlying!(Z)V void Boolean
 1 isCreativeMode!()Z Boolean
 1 setCreativeMode!(Z)V void Boolean
-net/minecraft/network/play/client/C07PacketPlayerDigging java.lang.Object
+net/minecraft/network/play/client/CPacketPlayerDigging java.lang.Object
 2 position net.minecraft.util.BlockPos
 2 facing net.minecraft.util.EnumFacing
-2 status net.minecraft.network.play.client.C07PacketPlayerDigging.Action
+2 status net.minecraft.network.play.client.CPacketPlayerDigging.Action
 1 getPosition!()Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayServer;)V void net.minecraft.network.play.INetHandlerPlayServer
 1 getFacing!()Lnet/minecraft/util/EnumFacing; net.minecraft.util.EnumFacing
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-1 getStatus!()Lnet/minecraft/network/play/client/C07PacketPlayerDigging$Action; net.minecraft.network.play.client.C07PacketPlayerDigging.Action
-net/minecraft/network/play/client/C0BPacketEntityAction java.lang.Object
+1 getStatus!()Lnet/minecraft/network/play/client/CPacketPlayerDigging$Action; net.minecraft.network.play.client.CPacketPlayerDigging.Action
+net/minecraft/network/play/client/CPacketEntityAction java.lang.Object
 2 entityID Int
-2 action net.minecraft.network.play.client.C0BPacketEntityAction.Action
+2 action net.minecraft.network.play.client.CPacketEntityAction.Action
 2 auxData Int
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayServer;)V void net.minecraft.network.play.INetHandlerPlayServer
-1 getAction!()Lnet/minecraft/network/play/client/C0BPacketEntityAction$Action; net.minecraft.network.play.client.C0BPacketEntityAction.Action
+1 getAction!()Lnet/minecraft/network/play/client/CPacketEntityAction$Action; net.minecraft.network.play.client.CPacketEntityAction.Action
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getAuxData!()I Int
-net/minecraft/network/play/client/C0CPacketInput java.lang.Object
+net/minecraft/network/play/client/CPacketInput java.lang.Object
 2 strafeSpeed Float
 2 forwardSpeed Float
 2 jumping Boolean
@@ -13313,21 +13313,21 @@ net/minecraft/network/play/client/C0CPacketInput java.lang.Object
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 isJumping!()Z Boolean
 1 isSneaking!()Z Boolean
-net/minecraft/network/play/client/C19PacketResourcePackStatus java.lang.Object
+net/minecraft/network/play/client/CPacketResourcePackStatus java.lang.Object
 2 hash String
-2 status net.minecraft.network.play.client.C19PacketResourcePackStatus.Action
+2 status net.minecraft.network.play.client.CPacketResourcePackStatus.Action
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayServer;)V void net.minecraft.network.play.INetHandlerPlayServer
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/client/C09PacketHeldItemChange java.lang.Object
+net/minecraft/network/play/client/CPacketHeldItemChange java.lang.Object
 2 slotId Int
 1 getSlotId!()I Int
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayServer;)V void net.minecraft.network.play.INetHandlerPlayServer
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/client/C10PacketCreativeInventoryAction java.lang.Object
+net/minecraft/network/play/client/CPacketCreativeInventoryAction java.lang.Object
 2 slotId Int
 2 stack net.minecraft.item.ItemStack
 1 getSlotId!()I Int
@@ -13336,7 +13336,7 @@ net/minecraft/network/play/client/C10PacketCreativeInventoryAction java.lang.Obj
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayServer;)V void net.minecraft.network.play.INetHandlerPlayServer
 1 getStack!()Lnet/minecraft/item/ItemStack; net.minecraft.item.ItemStack
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/client/C12PacketUpdateSign java.lang.Object
+net/minecraft/network/play/client/CPacketUpdateSign java.lang.Object
 2 pos net.minecraft.util.BlockPos
 2 lines Array<net.minecraft.util.IChatComponent>
 1 getPosition!()Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos
@@ -13345,7 +13345,7 @@ net/minecraft/network/play/client/C12PacketUpdateSign java.lang.Object
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayServer;)V void net.minecraft.network.play.INetHandlerPlayServer
 1 getLines!()[Lnet/minecraft/util/IChatComponent; Array<net.minecraft.util.IChatComponent>
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/play/client/C18PacketSpectate java.lang.Object
+net/minecraft/network/play/client/CPacketSpectate java.lang.Object
 2 id java.util.UUID
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
@@ -13361,7 +13361,7 @@ net/minecraft/command/CommandHandler java.lang.Object
 1 executeCommand!(Lnet/minecraft/command/ICommandSender;Ljava/lang/String;)I Int net.minecraft.command.ICommandSender;String
 4 tryExecute!(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/command/ICommand;Ljava/lang/String;)Z Boolean net.minecraft.command.ICommandSender;Array<String>;net.minecraft.command.ICommand;String
 10 dropFirstString!([Ljava/lang/String;)[Ljava/lang/String; Array<String> Array<String>
-net/minecraft/network/play/client/C08PacketPlayerBlockPlacement java.lang.Object
+net/minecraft/network/play/client/CPacketPlayerBlockPlacement java.lang.Object
 26 field_179726_a net.minecraft.util.BlockPos
 2 position net.minecraft.util.BlockPos
 2 placedBlockDirection Int
@@ -13390,14 +13390,14 @@ net/minecraft/network/handshake/client/C00Handshake java.lang.Object
 1 processPacket!(Lnet/minecraft/network/handshake/INetHandlerHandshakeServer;)V void net.minecraft.network.handshake.INetHandlerHandshakeServer
 1 getProtocolVersion!()I Int
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/login/server/S02PacketLoginSuccess java.lang.Object
+net/minecraft/network/login/server/SPacketLoginSuccess java.lang.Object
 2 profile com.mojang.authlib.GameProfile
 1 getProfile!()Lcom/mojang/authlib/GameProfile; com.mojang.authlib.GameProfile
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/login/INetHandlerLoginClient;)V void net.minecraft.network.login.INetHandlerLoginClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/login/server/S01PacketEncryptionRequest java.lang.Object
+net/minecraft/network/login/server/SPacketEncryptionRequest java.lang.Object
 2 hashedServerId String
 2 publicKey java.security.PublicKey
 2 verifyToken Array<Byte>
@@ -13408,28 +13408,28 @@ net/minecraft/network/login/server/S01PacketEncryptionRequest java.lang.Object
 1 getPublicKey!()Ljava/security/PublicKey; java.security.PublicKey
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getVerifyToken!()[B Array<Byte>
-net/minecraft/network/login/server/S03PacketEnableCompression java.lang.Object
+net/minecraft/network/login/server/SPacketEnableCompression java.lang.Object
 2 compressionTreshold Int
 1 getCompressionTreshold!()I Int
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/login/INetHandlerLoginClient;)V void net.minecraft.network.login.INetHandlerLoginClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/login/server/S00PacketDisconnect java.lang.Object
+net/minecraft/network/login/server/SPacketDisconnect java.lang.Object
 2 reason net.minecraft.util.IChatComponent
 1 func_149603_c!()Lnet/minecraft/util/IChatComponent; net.minecraft.util.IChatComponent
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/login/INetHandlerLoginClient;)V void net.minecraft.network.login.INetHandlerLoginClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/login/client/C00PacketLoginStart java.lang.Object
+net/minecraft/network/login/client/CPacketLoginStart java.lang.Object
 2 profile com.mojang.authlib.GameProfile
 1 getProfile!()Lcom/mojang/authlib/GameProfile; com.mojang.authlib.GameProfile
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/login/INetHandlerLoginServer;)V void net.minecraft.network.login.INetHandlerLoginServer
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/login/client/C01PacketEncryptionResponse java.lang.Object
+net/minecraft/network/login/client/CPacketEncryptionResponse java.lang.Object
 2 secretKeyEncrypted Array<Byte>
 2 verifyTokenEncrypted Array<Byte>
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
@@ -13438,13 +13438,13 @@ net/minecraft/network/login/client/C01PacketEncryptionResponse java.lang.Object
 1 processPacket!(Lnet/minecraft/network/login/INetHandlerLoginServer;)V void net.minecraft.network.login.INetHandlerLoginServer
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1 getVerifyToken!(Ljava/security/PrivateKey;)[B Array<Byte> java.security.PrivateKey
-net/minecraft/network/status/server/S01PacketPong java.lang.Object
+net/minecraft/network/status/server/SPacketPong java.lang.Object
 2 clientTime Long
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/status/INetHandlerStatusClient;)V void net.minecraft.network.status.INetHandlerStatusClient
 1 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
-net/minecraft/network/status/server/S00PacketServerInfo java.lang.Object
+net/minecraft/network/status/server/SPacketServerInfo java.lang.Object
 25 GSON com.google.gson.Gson
 2 response net.minecraft.network.ServerStatusResponse
 1 getResponse!()Lnet/minecraft/network/ServerStatusResponse; net.minecraft.network.ServerStatusResponse
@@ -13465,7 +13465,7 @@ net/minecraft/network/ServerStatusResponse java.lang.Object
 1 getPlayerCountData!()Lnet/minecraft/network/ServerStatusResponse$PlayerCountData; net.minecraft.network.ServerStatusResponse.PlayerCountData
 1 getProtocolVersionInfo!()Lnet/minecraft/network/ServerStatusResponse$MinecraftProtocolVersionIdentifier; net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier
 1 getFavicon!()Ljava/lang/String; String
-net/minecraft/network/status/client/C01PacketPing java.lang.Object
+net/minecraft/network/status/client/CPacketPing java.lang.Object
 2 clientTime Long
 1 getClientTime!()J Long
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
@@ -13751,7 +13751,7 @@ net/minecraft/entity/player/EntityPlayerMP net.minecraft.entity.player.EntityPla
 1 trySleep!(Lnet/minecraft/util/BlockPos;)Lnet/minecraft/entity/player/EntityPlayer$EnumStatus; net.minecraft.entity.player.EntityPlayer.EnumStatus net.minecraft.util.BlockPos
 1 readEntityFromNBT!(Lnet/minecraft/nbt/NBTTagCompound;)V void net.minecraft.nbt.NBTTagCompound
 1 addChatMessage!(Lnet/minecraft/util/IChatComponent;)V void net.minecraft.util.IChatComponent
-1 handleClientSettings!(Lnet/minecraft/network/play/client/C15PacketClientSettings;)V void net.minecraft.network.play.client.C15PacketClientSettings
+1 handleClientSettings!(Lnet/minecraft/network/play/client/CPacketClientSettings;)V void net.minecraft.network.play.client.CPacketClientSettings
 1 loadResourcePack!(Ljava/lang/String;Ljava/lang/String;)V void String;String
 1 isSpectatedByPlayer!(Lnet/minecraft/entity/player/EntityPlayerMP;)Z Boolean net.minecraft.entity.player.EntityPlayerMP
 1 func_175145_a!(Lnet/minecraft/stats/StatBase;)V void net.minecraft.stats.StatBase
@@ -13917,30 +13917,30 @@ net/minecraft/network/NetHandlerPlayServer java.lang.Object
 1 setPlayerLocation!(DDDFF)V void Double;Double;Double;Float;Float
 1 onDisconnect!(Lnet/minecraft/util/IChatComponent;)V void net.minecraft.util.IChatComponent
 1 sendPacket!(Lnet/minecraft/network/Packet;)V void net.minecraft.network.Packet
-1 processTabComplete!(Lnet/minecraft/network/play/client/C14PacketTabComplete;)V void net.minecraft.network.play.client.C14PacketTabComplete
-1 processChatMessage!(Lnet/minecraft/network/play/client/C01PacketChatMessage;)V void net.minecraft.network.play.client.C01PacketChatMessage
-1 processClientStatus!(Lnet/minecraft/network/play/client/C16PacketClientStatus;)V void net.minecraft.network.play.client.C16PacketClientStatus
-1 processClientSettings!(Lnet/minecraft/network/play/client/C15PacketClientSettings;)V void net.minecraft.network.play.client.C15PacketClientSettings
-1 processConfirmTransaction!(Lnet/minecraft/network/play/client/C0FPacketConfirmTransaction;)V void net.minecraft.network.play.client.C0FPacketConfirmTransaction
-1 processEnchantItem!(Lnet/minecraft/network/play/client/C11PacketEnchantItem;)V void net.minecraft.network.play.client.C11PacketEnchantItem
-1 processClickWindow!(Lnet/minecraft/network/play/client/C0EPacketClickWindow;)V void net.minecraft.network.play.client.C0EPacketClickWindow
-1 processCloseWindow!(Lnet/minecraft/network/play/client/C0DPacketCloseWindow;)V void net.minecraft.network.play.client.C0DPacketCloseWindow
-1 processVanilla250Packet!(Lnet/minecraft/network/play/client/C17PacketCustomPayload;)V void net.minecraft.network.play.client.C17PacketCustomPayload
-1 processUseEntity!(Lnet/minecraft/network/play/client/C02PacketUseEntity;)V void net.minecraft.network.play.client.C02PacketUseEntity
-1 processKeepAlive!(Lnet/minecraft/network/play/client/C00PacketKeepAlive;)V void net.minecraft.network.play.client.C00PacketKeepAlive
-1 processPlayer!(Lnet/minecraft/network/play/client/C03PacketPlayer;)V void net.minecraft.network.play.client.C03PacketPlayer
-1 processPlayerAbilities!(Lnet/minecraft/network/play/client/C13PacketPlayerAbilities;)V void net.minecraft.network.play.client.C13PacketPlayerAbilities
-1 processPlayerDigging!(Lnet/minecraft/network/play/client/C07PacketPlayerDigging;)V void net.minecraft.network.play.client.C07PacketPlayerDigging
-1 processEntityAction!(Lnet/minecraft/network/play/client/C0BPacketEntityAction;)V void net.minecraft.network.play.client.C0BPacketEntityAction
-1 processInput!(Lnet/minecraft/network/play/client/C0CPacketInput;)V void net.minecraft.network.play.client.C0CPacketInput
-1 handleResourcePackStatus!(Lnet/minecraft/network/play/client/C19PacketResourcePackStatus;)V void net.minecraft.network.play.client.C19PacketResourcePackStatus
-1 processHeldItemChange!(Lnet/minecraft/network/play/client/C09PacketHeldItemChange;)V void net.minecraft.network.play.client.C09PacketHeldItemChange
-1 processCreativeInventoryAction!(Lnet/minecraft/network/play/client/C10PacketCreativeInventoryAction;)V void net.minecraft.network.play.client.C10PacketCreativeInventoryAction
-1 processUpdateSign!(Lnet/minecraft/network/play/client/C12PacketUpdateSign;)V void net.minecraft.network.play.client.C12PacketUpdateSign
-1 handleAnimation!(Lnet/minecraft/network/play/client/C0APacketAnimation;)V void net.minecraft.network.play.client.C0APacketAnimation
-1 handleSpectate!(Lnet/minecraft/network/play/client/C18PacketSpectate;)V void net.minecraft.network.play.client.C18PacketSpectate
-1 processPlayerBlockPlacement!(Lnet/minecraft/network/play/client/C08PacketPlayerBlockPlacement;)V void net.minecraft.network.play.client.C08PacketPlayerBlockPlacement
-2 func_183006_b!(Lnet/minecraft/network/play/client/C03PacketPlayer;)Z Boolean net.minecraft.network.play.client.C03PacketPlayer
+1 processTabComplete!(Lnet/minecraft/network/play/client/CPacketTabComplete;)V void net.minecraft.network.play.client.CPacketTabComplete
+1 processChatMessage!(Lnet/minecraft/network/play/client/CPacketChatMessage;)V void net.minecraft.network.play.client.CPacketChatMessage
+1 processClientStatus!(Lnet/minecraft/network/play/client/CPacketClientStatus;)V void net.minecraft.network.play.client.CPacketClientStatus
+1 processClientSettings!(Lnet/minecraft/network/play/client/CPacketClientSettings;)V void net.minecraft.network.play.client.CPacketClientSettings
+1 processConfirmTransaction!(Lnet/minecraft/network/play/client/CPacketConfirmTransaction;)V void net.minecraft.network.play.client.CPacketConfirmTransaction
+1 processEnchantItem!(Lnet/minecraft/network/play/client/CPacketEnchantItem;)V void net.minecraft.network.play.client.CPacketEnchantItem
+1 processClickWindow!(Lnet/minecraft/network/play/client/CPacketClickWindow;)V void net.minecraft.network.play.client.CPacketClickWindow
+1 processCloseWindow!(Lnet/minecraft/network/play/client/CPacketCloseWindow;)V void net.minecraft.network.play.client.CPacketCloseWindow
+1 processVanilla250Packet!(Lnet/minecraft/network/play/client/CPacketCustomPayload;)V void net.minecraft.network.play.client.CPacketCustomPayload
+1 processUseEntity!(Lnet/minecraft/network/play/client/CPacketUseEntity;)V void net.minecraft.network.play.client.CPacketUseEntity
+1 processKeepAlive!(Lnet/minecraft/network/play/client/CPacketKeepAlive;)V void net.minecraft.network.play.client.CPacketKeepAlive
+1 processPlayer!(Lnet/minecraft/network/play/client/CPacketPlayer;)V void net.minecraft.network.play.client.CPacketPlayer
+1 processPlayerAbilities!(Lnet/minecraft/network/play/client/CPacketPlayerAbilities;)V void net.minecraft.network.play.client.CPacketPlayerAbilities
+1 processPlayerDigging!(Lnet/minecraft/network/play/client/CPacketPlayerDigging;)V void net.minecraft.network.play.client.CPacketPlayerDigging
+1 processEntityAction!(Lnet/minecraft/network/play/client/CPacketEntityAction;)V void net.minecraft.network.play.client.CPacketEntityAction
+1 processInput!(Lnet/minecraft/network/play/client/CPacketInput;)V void net.minecraft.network.play.client.CPacketInput
+1 handleResourcePackStatus!(Lnet/minecraft/network/play/client/CPacketResourcePackStatus;)V void net.minecraft.network.play.client.CPacketResourcePackStatus
+1 processHeldItemChange!(Lnet/minecraft/network/play/client/CPacketHeldItemChange;)V void net.minecraft.network.play.client.CPacketHeldItemChange
+1 processCreativeInventoryAction!(Lnet/minecraft/network/play/client/CPacketCreativeInventoryAction;)V void net.minecraft.network.play.client.CPacketCreativeInventoryAction
+1 processUpdateSign!(Lnet/minecraft/network/play/client/CPacketUpdateSign;)V void net.minecraft.network.play.client.CPacketUpdateSign
+1 handleAnimation!(Lnet/minecraft/network/play/client/CPacketAnimation;)V void net.minecraft.network.play.client.CPacketAnimation
+1 handleSpectate!(Lnet/minecraft/network/play/client/CPacketSpectate;)V void net.minecraft.network.play.client.CPacketSpectate
+1 processPlayerBlockPlacement!(Lnet/minecraft/network/play/client/CPacketPlayerBlockPlacement;)V void net.minecraft.network.play.client.CPacketPlayerBlockPlacement
+2 func_183006_b!(Lnet/minecraft/network/play/client/CPacketPlayer;)Z Boolean net.minecraft.network.play.client.CPacketPlayer
 1 update!()V void
 1 kickPlayerFromServer!(Ljava/lang/String;)V void String
 2 currentTimeMillis!()J Long
@@ -13966,8 +13966,8 @@ net/minecraft/server/network/NetHandlerLoginServer java.lang.Object
 4 getOfflineProfile!(Lcom/mojang/authlib/GameProfile;)Lcom/mojang/authlib/GameProfile; com.mojang.authlib.GameProfile com.mojang.authlib.GameProfile
 1 onDisconnect!(Lnet/minecraft/util/IChatComponent;)V void net.minecraft.util.IChatComponent
 1 closeConnection!(Ljava/lang/String;)V void String
-1 processLoginStart!(Lnet/minecraft/network/login/client/C00PacketLoginStart;)V void net.minecraft.network.login.client.C00PacketLoginStart
-1 processEncryptionResponse!(Lnet/minecraft/network/login/client/C01PacketEncryptionResponse;)V void net.minecraft.network.login.client.C01PacketEncryptionResponse
+1 processLoginStart!(Lnet/minecraft/network/login/client/CPacketLoginStart;)V void net.minecraft.network.login.client.CPacketLoginStart
+1 processEncryptionResponse!(Lnet/minecraft/network/login/client/CPacketEncryptionResponse;)V void net.minecraft.network.login.client.CPacketEncryptionResponse
 1 tryAcceptPlayer!()V void
 1 update!()V void
 1 getConnectionInfo!()Ljava/lang/String; String
@@ -13977,8 +13977,8 @@ net/minecraft/server/network/NetHandlerStatusServer java.lang.Object
 18 networkManager net.minecraft.network.NetworkManager
 2 handled Boolean
 1 onDisconnect!(Lnet/minecraft/util/IChatComponent;)V void net.minecraft.util.IChatComponent
-1 processPing!(Lnet/minecraft/network/status/client/C01PacketPing;)V void net.minecraft.network.status.client.C01PacketPing
-1 processServerQuery!(Lnet/minecraft/network/status/client/C00PacketServerQuery;)V void net.minecraft.network.status.client.C00PacketServerQuery
+1 processPing!(Lnet/minecraft/network/status/client/CPacketPing;)V void net.minecraft.network.status.client.CPacketPing
+1 processServerQuery!(Lnet/minecraft/network/status/client/CPacketServerQuery;)V void net.minecraft.network.status.client.CPacketServerQuery
 net/minecraft/server/management/BanEntry net.minecraft.server.management.UserListEntry
 25 dateFormat java.text.SimpleDateFormat
 20 banStartDate java.util.Date
@@ -20817,106 +20817,106 @@ net/minecraft/network/Packet null
 1025 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 1025 writePacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 net/minecraft/network/play/INetHandlerPlayClient null
-1025 handlePlayerPosLook!(Lnet/minecraft/network/play/server/S08PacketPlayerPosLook;)V void net.minecraft.network.play.server.S08PacketPlayerPosLook
-1025 handleSpawnObject!(Lnet/minecraft/network/play/server/S0EPacketSpawnObject;)V void net.minecraft.network.play.server.S0EPacketSpawnObject
-1025 handleSpawnExperienceOrb!(Lnet/minecraft/network/play/server/S11PacketSpawnExperienceOrb;)V void net.minecraft.network.play.server.S11PacketSpawnExperienceOrb
-1025 handleSpawnGlobalEntity!(Lnet/minecraft/network/play/server/S2CPacketSpawnGlobalEntity;)V void net.minecraft.network.play.server.S2CPacketSpawnGlobalEntity
-1025 handleSpawnMob!(Lnet/minecraft/network/play/server/S0FPacketSpawnMob;)V void net.minecraft.network.play.server.S0FPacketSpawnMob
-1025 handleSpawnPainting!(Lnet/minecraft/network/play/server/S10PacketSpawnPainting;)V void net.minecraft.network.play.server.S10PacketSpawnPainting
-1025 handleSpawnPlayer!(Lnet/minecraft/network/play/server/S0CPacketSpawnPlayer;)V void net.minecraft.network.play.server.S0CPacketSpawnPlayer
-1025 handleAnimation!(Lnet/minecraft/network/play/server/S0BPacketAnimation;)V void net.minecraft.network.play.server.S0BPacketAnimation
-1025 handleStatistics!(Lnet/minecraft/network/play/server/S37PacketStatistics;)V void net.minecraft.network.play.server.S37PacketStatistics
-1025 handleBlockBreakAnim!(Lnet/minecraft/network/play/server/S25PacketBlockBreakAnim;)V void net.minecraft.network.play.server.S25PacketBlockBreakAnim
-1025 handleUpdateTileEntity!(Lnet/minecraft/network/play/server/S35PacketUpdateTileEntity;)V void net.minecraft.network.play.server.S35PacketUpdateTileEntity
-1025 handleBlockAction!(Lnet/minecraft/network/play/server/S24PacketBlockAction;)V void net.minecraft.network.play.server.S24PacketBlockAction
-1025 handleBlockChange!(Lnet/minecraft/network/play/server/S23PacketBlockChange;)V void net.minecraft.network.play.server.S23PacketBlockChange
-1025 handleServerDifficulty!(Lnet/minecraft/network/play/server/S41PacketServerDifficulty;)V void net.minecraft.network.play.server.S41PacketServerDifficulty
-1025 handleTabComplete!(Lnet/minecraft/network/play/server/S3APacketTabComplete;)V void net.minecraft.network.play.server.S3APacketTabComplete
-1025 handleChat!(Lnet/minecraft/network/play/server/S02PacketChat;)V void net.minecraft.network.play.server.S02PacketChat
-1025 handleMultiBlockChange!(Lnet/minecraft/network/play/server/S22PacketMultiBlockChange;)V void net.minecraft.network.play.server.S22PacketMultiBlockChange
-1025 handleConfirmTransaction!(Lnet/minecraft/network/play/server/S32PacketConfirmTransaction;)V void net.minecraft.network.play.server.S32PacketConfirmTransaction
-1025 handleCloseWindow!(Lnet/minecraft/network/play/server/S2EPacketCloseWindow;)V void net.minecraft.network.play.server.S2EPacketCloseWindow
-1025 handleOpenWindow!(Lnet/minecraft/network/play/server/S2DPacketOpenWindow;)V void net.minecraft.network.play.server.S2DPacketOpenWindow
-1025 handleWindowItems!(Lnet/minecraft/network/play/server/S30PacketWindowItems;)V void net.minecraft.network.play.server.S30PacketWindowItems
-1025 handleWindowProperty!(Lnet/minecraft/network/play/server/S31PacketWindowProperty;)V void net.minecraft.network.play.server.S31PacketWindowProperty
-1025 handleSetSlot!(Lnet/minecraft/network/play/server/S2FPacketSetSlot;)V void net.minecraft.network.play.server.S2FPacketSetSlot
-1025 handleCustomPayload!(Lnet/minecraft/network/play/server/S3FPacketCustomPayload;)V void net.minecraft.network.play.server.S3FPacketCustomPayload
-1025 handleDisconnect!(Lnet/minecraft/network/play/server/S40PacketDisconnect;)V void net.minecraft.network.play.server.S40PacketDisconnect
-1025 handleEntityStatus!(Lnet/minecraft/network/play/server/S19PacketEntityStatus;)V void net.minecraft.network.play.server.S19PacketEntityStatus
-1025 handleEntityNBT!(Lnet/minecraft/network/play/server/S49PacketUpdateEntityNBT;)V void net.minecraft.network.play.server.S49PacketUpdateEntityNBT
-1025 handleExplosion!(Lnet/minecraft/network/play/server/S27PacketExplosion;)V void net.minecraft.network.play.server.S27PacketExplosion
-1025 handleSetCompressionLevel!(Lnet/minecraft/network/play/server/S46PacketSetCompressionLevel;)V void net.minecraft.network.play.server.S46PacketSetCompressionLevel
-1025 handleChangeGameState!(Lnet/minecraft/network/play/server/S2BPacketChangeGameState;)V void net.minecraft.network.play.server.S2BPacketChangeGameState
-1025 handleKeepAlive!(Lnet/minecraft/network/play/server/S00PacketKeepAlive;)V void net.minecraft.network.play.server.S00PacketKeepAlive
-1025 handleChunkData!(Lnet/minecraft/network/play/server/S21PacketChunkData;)V void net.minecraft.network.play.server.S21PacketChunkData
-1025 handleMapChunkBulk!(Lnet/minecraft/network/play/server/S26PacketMapChunkBulk;)V void net.minecraft.network.play.server.S26PacketMapChunkBulk
-1025 handleEffect!(Lnet/minecraft/network/play/server/S28PacketEffect;)V void net.minecraft.network.play.server.S28PacketEffect
-1025 handleParticles!(Lnet/minecraft/network/play/server/S2APacketParticles;)V void net.minecraft.network.play.server.S2APacketParticles
-1025 handleSoundEffect!(Lnet/minecraft/network/play/server/S29PacketSoundEffect;)V void net.minecraft.network.play.server.S29PacketSoundEffect
-1025 handleJoinGame!(Lnet/minecraft/network/play/server/S01PacketJoinGame;)V void net.minecraft.network.play.server.S01PacketJoinGame
-1025 handleMaps!(Lnet/minecraft/network/play/server/S34PacketMaps;)V void net.minecraft.network.play.server.S34PacketMaps
-1025 handleEntityMovement!(Lnet/minecraft/network/play/server/S14PacketEntity;)V void net.minecraft.network.play.server.S14PacketEntity
-1025 handleSignEditorOpen!(Lnet/minecraft/network/play/server/S36PacketSignEditorOpen;)V void net.minecraft.network.play.server.S36PacketSignEditorOpen
-1025 handlePlayerAbilities!(Lnet/minecraft/network/play/server/S39PacketPlayerAbilities;)V void net.minecraft.network.play.server.S39PacketPlayerAbilities
-1025 handleCombatEvent!(Lnet/minecraft/network/play/server/S42PacketCombatEvent;)V void net.minecraft.network.play.server.S42PacketCombatEvent
-1025 handlePlayerListItem!(Lnet/minecraft/network/play/server/S38PacketPlayerListItem;)V void net.minecraft.network.play.server.S38PacketPlayerListItem
-1025 handleUseBed!(Lnet/minecraft/network/play/server/S0APacketUseBed;)V void net.minecraft.network.play.server.S0APacketUseBed
-1025 handleDestroyEntities!(Lnet/minecraft/network/play/server/S13PacketDestroyEntities;)V void net.minecraft.network.play.server.S13PacketDestroyEntities
-1025 handleRemoveEntityEffect!(Lnet/minecraft/network/play/server/S1EPacketRemoveEntityEffect;)V void net.minecraft.network.play.server.S1EPacketRemoveEntityEffect
-1025 handleResourcePack!(Lnet/minecraft/network/play/server/S48PacketResourcePackSend;)V void net.minecraft.network.play.server.S48PacketResourcePackSend
-1025 handleRespawn!(Lnet/minecraft/network/play/server/S07PacketRespawn;)V void net.minecraft.network.play.server.S07PacketRespawn
-1025 handleEntityHeadLook!(Lnet/minecraft/network/play/server/S19PacketEntityHeadLook;)V void net.minecraft.network.play.server.S19PacketEntityHeadLook
-1025 handleWorldBorder!(Lnet/minecraft/network/play/server/S44PacketWorldBorder;)V void net.minecraft.network.play.server.S44PacketWorldBorder
-1025 handleCamera!(Lnet/minecraft/network/play/server/S43PacketCamera;)V void net.minecraft.network.play.server.S43PacketCamera
-1025 handleHeldItemChange!(Lnet/minecraft/network/play/server/S09PacketHeldItemChange;)V void net.minecraft.network.play.server.S09PacketHeldItemChange
-1025 handleDisplayScoreboard!(Lnet/minecraft/network/play/server/S3DPacketDisplayScoreboard;)V void net.minecraft.network.play.server.S3DPacketDisplayScoreboard
-1025 handleEntityMetadata!(Lnet/minecraft/network/play/server/S1CPacketEntityMetadata;)V void net.minecraft.network.play.server.S1CPacketEntityMetadata
-1025 handleEntityAttach!(Lnet/minecraft/network/play/server/S1BPacketEntityAttach;)V void net.minecraft.network.play.server.S1BPacketEntityAttach
-1025 handleEntityVelocity!(Lnet/minecraft/network/play/server/S12PacketEntityVelocity;)V void net.minecraft.network.play.server.S12PacketEntityVelocity
-1025 handleEntityEquipment!(Lnet/minecraft/network/play/server/S04PacketEntityEquipment;)V void net.minecraft.network.play.server.S04PacketEntityEquipment
-1025 handleSetExperience!(Lnet/minecraft/network/play/server/S1FPacketSetExperience;)V void net.minecraft.network.play.server.S1FPacketSetExperience
-1025 handleUpdateHealth!(Lnet/minecraft/network/play/server/S06PacketUpdateHealth;)V void net.minecraft.network.play.server.S06PacketUpdateHealth
-1025 handleScoreboardObjective!(Lnet/minecraft/network/play/server/S3BPacketScoreboardObjective;)V void net.minecraft.network.play.server.S3BPacketScoreboardObjective
-1025 handleTeams!(Lnet/minecraft/network/play/server/S3EPacketTeams;)V void net.minecraft.network.play.server.S3EPacketTeams
-1025 handleUpdateScore!(Lnet/minecraft/network/play/server/S3CPacketUpdateScore;)V void net.minecraft.network.play.server.S3CPacketUpdateScore
-1025 handleSpawnPosition!(Lnet/minecraft/network/play/server/S05PacketSpawnPosition;)V void net.minecraft.network.play.server.S05PacketSpawnPosition
-1025 handleTimeUpdate!(Lnet/minecraft/network/play/server/S03PacketTimeUpdate;)V void net.minecraft.network.play.server.S03PacketTimeUpdate
-1025 handleTitle!(Lnet/minecraft/network/play/server/S45PacketTitle;)V void net.minecraft.network.play.server.S45PacketTitle
-1025 handleUpdateSign!(Lnet/minecraft/network/play/server/S33PacketUpdateSign;)V void net.minecraft.network.play.server.S33PacketUpdateSign
-1025 handlePlayerListHeaderFooter!(Lnet/minecraft/network/play/server/S47PacketPlayerListHeaderFooter;)V void net.minecraft.network.play.server.S47PacketPlayerListHeaderFooter
-1025 handleCollectItem!(Lnet/minecraft/network/play/server/S0DPacketCollectItem;)V void net.minecraft.network.play.server.S0DPacketCollectItem
-1025 handleEntityTeleport!(Lnet/minecraft/network/play/server/S18PacketEntityTeleport;)V void net.minecraft.network.play.server.S18PacketEntityTeleport
-1025 handleEntityProperties!(Lnet/minecraft/network/play/server/S20PacketEntityProperties;)V void net.minecraft.network.play.server.S20PacketEntityProperties
-1025 handleEntityEffect!(Lnet/minecraft/network/play/server/S1DPacketEntityEffect;)V void net.minecraft.network.play.server.S1DPacketEntityEffect
+1025 handlePlayerPosLook!(Lnet/minecraft/network/play/server/SPacketPlayerPosLook;)V void net.minecraft.network.play.server.SPacketPlayerPosLook
+1025 handleSpawnObject!(Lnet/minecraft/network/play/server/SPacketSpawnObject;)V void net.minecraft.network.play.server.SPacketSpawnObject
+1025 handleSpawnExperienceOrb!(Lnet/minecraft/network/play/server/SPacketSpawnExperienceOrb;)V void net.minecraft.network.play.server.SPacketSpawnExperienceOrb
+1025 handleSpawnGlobalEntity!(Lnet/minecraft/network/play/server/SPacketSpawnGlobalEntity;)V void net.minecraft.network.play.server.SPacketSpawnGlobalEntity
+1025 handleSpawnMob!(Lnet/minecraft/network/play/server/SPacketSpawnMob;)V void net.minecraft.network.play.server.SPacketSpawnMob
+1025 handleSpawnPainting!(Lnet/minecraft/network/play/server/SPacketSpawnPainting;)V void net.minecraft.network.play.server.SPacketSpawnPainting
+1025 handleSpawnPlayer!(Lnet/minecraft/network/play/server/SPacketSpawnPlayer;)V void net.minecraft.network.play.server.SPacketSpawnPlayer
+1025 handleAnimation!(Lnet/minecraft/network/play/server/SPacketAnimation;)V void net.minecraft.network.play.server.SPacketAnimation
+1025 handleStatistics!(Lnet/minecraft/network/play/server/SPacketStatistics;)V void net.minecraft.network.play.server.SPacketStatistics
+1025 handleBlockBreakAnim!(Lnet/minecraft/network/play/server/SPacketBlockBreakAnim;)V void net.minecraft.network.play.server.SPacketBlockBreakAnim
+1025 handleUpdateTileEntity!(Lnet/minecraft/network/play/server/SPacketUpdateTileEntity;)V void net.minecraft.network.play.server.SPacketUpdateTileEntity
+1025 handleBlockAction!(Lnet/minecraft/network/play/server/SPacketBlockAction;)V void net.minecraft.network.play.server.SPacketBlockAction
+1025 handleBlockChange!(Lnet/minecraft/network/play/server/SPacketBlockChange;)V void net.minecraft.network.play.server.SPacketBlockChange
+1025 handleServerDifficulty!(Lnet/minecraft/network/play/server/SPacketServerDifficulty;)V void net.minecraft.network.play.server.SPacketServerDifficulty
+1025 handleTabComplete!(Lnet/minecraft/network/play/server/SPacketTabComplete;)V void net.minecraft.network.play.server.SPacketTabComplete
+1025 handleChat!(Lnet/minecraft/network/play/server/SPacketChat;)V void net.minecraft.network.play.server.SPacketChat
+1025 handleMultiBlockChange!(Lnet/minecraft/network/play/server/SPacketMultiBlockChange;)V void net.minecraft.network.play.server.SPacketMultiBlockChange
+1025 handleConfirmTransaction!(Lnet/minecraft/network/play/server/SPacketConfirmTransaction;)V void net.minecraft.network.play.server.SPacketConfirmTransaction
+1025 handleCloseWindow!(Lnet/minecraft/network/play/server/SPacketCloseWindow;)V void net.minecraft.network.play.server.SPacketCloseWindow
+1025 handleOpenWindow!(Lnet/minecraft/network/play/server/SPacketOpenWindow;)V void net.minecraft.network.play.server.SPacketOpenWindow
+1025 handleWindowItems!(Lnet/minecraft/network/play/server/SPacketWindowItems;)V void net.minecraft.network.play.server.SPacketWindowItems
+1025 handleWindowProperty!(Lnet/minecraft/network/play/server/SPacketWindowProperty;)V void net.minecraft.network.play.server.SPacketWindowProperty
+1025 handleSetSlot!(Lnet/minecraft/network/play/server/SPacketSetSlot;)V void net.minecraft.network.play.server.SPacketSetSlot
+1025 handleCustomPayload!(Lnet/minecraft/network/play/server/SPacketCustomPayload;)V void net.minecraft.network.play.server.SPacketCustomPayload
+1025 handleDisconnect!(Lnet/minecraft/network/play/server/SPacketDisconnect;)V void net.minecraft.network.play.server.SPacketDisconnect
+1025 handleEntityStatus!(Lnet/minecraft/network/play/server/SPacketEntityStatus;)V void net.minecraft.network.play.server.SPacketEntityStatus
+1025 handleEntityNBT!(Lnet/minecraft/network/play/server/SPacketUpdateEntityNBT;)V void net.minecraft.network.play.server.SPacketUpdateEntityNBT
+1025 handleExplosion!(Lnet/minecraft/network/play/server/SPacketExplosion;)V void net.minecraft.network.play.server.SPacketExplosion
+1025 handleSetCompressionLevel!(Lnet/minecraft/network/play/server/SPacketSetCompressionLevel;)V void net.minecraft.network.play.server.SPacketSetCompressionLevel
+1025 handleChangeGameState!(Lnet/minecraft/network/play/server/SPacketChangeGameState;)V void net.minecraft.network.play.server.SPacketChangeGameState
+1025 handleKeepAlive!(Lnet/minecraft/network/play/server/SPacketKeepAlive;)V void net.minecraft.network.play.server.SPacketKeepAlive
+1025 handleChunkData!(Lnet/minecraft/network/play/server/SPacketChunkData;)V void net.minecraft.network.play.server.SPacketChunkData
+1025 handleMapChunkBulk!(Lnet/minecraft/network/play/server/SPacketMapChunkBulk;)V void net.minecraft.network.play.server.SPacketMapChunkBulk
+1025 handleEffect!(Lnet/minecraft/network/play/server/SPacketEffect;)V void net.minecraft.network.play.server.SPacketEffect
+1025 handleParticles!(Lnet/minecraft/network/play/server/SPacketParticles;)V void net.minecraft.network.play.server.SPacketParticles
+1025 handleSoundEffect!(Lnet/minecraft/network/play/server/SPacketSoundEffect;)V void net.minecraft.network.play.server.SPacketSoundEffect
+1025 handleJoinGame!(Lnet/minecraft/network/play/server/SPacketJoinGame;)V void net.minecraft.network.play.server.SPacketJoinGame
+1025 handleMaps!(Lnet/minecraft/network/play/server/SPacketMaps;)V void net.minecraft.network.play.server.SPacketMaps
+1025 handleEntityMovement!(Lnet/minecraft/network/play/server/SPacketEntity;)V void net.minecraft.network.play.server.SPacketEntity
+1025 handleSignEditorOpen!(Lnet/minecraft/network/play/server/SPacketSignEditorOpen;)V void net.minecraft.network.play.server.SPacketSignEditorOpen
+1025 handlePlayerAbilities!(Lnet/minecraft/network/play/server/SPacketPlayerAbilities;)V void net.minecraft.network.play.server.SPacketPlayerAbilities
+1025 handleCombatEvent!(Lnet/minecraft/network/play/server/SPacketCombatEvent;)V void net.minecraft.network.play.server.SPacketCombatEvent
+1025 handlePlayerListItem!(Lnet/minecraft/network/play/server/SPacketPlayerListItem;)V void net.minecraft.network.play.server.SPacketPlayerListItem
+1025 handleUseBed!(Lnet/minecraft/network/play/server/SPacketUseBed;)V void net.minecraft.network.play.server.SPacketUseBed
+1025 handleDestroyEntities!(Lnet/minecraft/network/play/server/SPacketDestroyEntities;)V void net.minecraft.network.play.server.SPacketDestroyEntities
+1025 handleRemoveEntityEffect!(Lnet/minecraft/network/play/server/SPacketRemoveEntityEffect;)V void net.minecraft.network.play.server.SPacketRemoveEntityEffect
+1025 handleResourcePack!(Lnet/minecraft/network/play/server/SPacketResourcePackSend;)V void net.minecraft.network.play.server.SPacketResourcePackSend
+1025 handleRespawn!(Lnet/minecraft/network/play/server/SPacketRespawn;)V void net.minecraft.network.play.server.SPacketRespawn
+1025 handleEntityHeadLook!(Lnet/minecraft/network/play/server/SPacketEntityHeadLook;)V void net.minecraft.network.play.server.SPacketEntityHeadLook
+1025 handleWorldBorder!(Lnet/minecraft/network/play/server/SPacketWorldBorder;)V void net.minecraft.network.play.server.SPacketWorldBorder
+1025 handleCamera!(Lnet/minecraft/network/play/server/SPacketCamera;)V void net.minecraft.network.play.server.SPacketCamera
+1025 handleHeldItemChange!(Lnet/minecraft/network/play/server/SPacketHeldItemChange;)V void net.minecraft.network.play.server.SPacketHeldItemChange
+1025 handleDisplayScoreboard!(Lnet/minecraft/network/play/server/SPacketDisplayScoreboard;)V void net.minecraft.network.play.server.SPacketDisplayScoreboard
+1025 handleEntityMetadata!(Lnet/minecraft/network/play/server/SPacketEntityMetadata;)V void net.minecraft.network.play.server.SPacketEntityMetadata
+1025 handleEntityAttach!(Lnet/minecraft/network/play/server/SPacketEntityAttach;)V void net.minecraft.network.play.server.SPacketEntityAttach
+1025 handleEntityVelocity!(Lnet/minecraft/network/play/server/SPacketEntityVelocity;)V void net.minecraft.network.play.server.SPacketEntityVelocity
+1025 handleEntityEquipment!(Lnet/minecraft/network/play/server/SPacketEntityEquipment;)V void net.minecraft.network.play.server.SPacketEntityEquipment
+1025 handleSetExperience!(Lnet/minecraft/network/play/server/SPacketSetExperience;)V void net.minecraft.network.play.server.SPacketSetExperience
+1025 handleUpdateHealth!(Lnet/minecraft/network/play/server/SPacketUpdateHealth;)V void net.minecraft.network.play.server.SPacketUpdateHealth
+1025 handleScoreboardObjective!(Lnet/minecraft/network/play/server/SPacketScoreboardObjective;)V void net.minecraft.network.play.server.SPacketScoreboardObjective
+1025 handleTeams!(Lnet/minecraft/network/play/server/SPacketTeams;)V void net.minecraft.network.play.server.SPacketTeams
+1025 handleUpdateScore!(Lnet/minecraft/network/play/server/SPacketUpdateScore;)V void net.minecraft.network.play.server.SPacketUpdateScore
+1025 handleSpawnPosition!(Lnet/minecraft/network/play/server/SPacketSpawnPosition;)V void net.minecraft.network.play.server.SPacketSpawnPosition
+1025 handleTimeUpdate!(Lnet/minecraft/network/play/server/SPacketTimeUpdate;)V void net.minecraft.network.play.server.SPacketTimeUpdate
+1025 handleTitle!(Lnet/minecraft/network/play/server/SPacketTitle;)V void net.minecraft.network.play.server.SPacketTitle
+1025 handleUpdateSign!(Lnet/minecraft/network/play/server/SPacketUpdateSign;)V void net.minecraft.network.play.server.SPacketUpdateSign
+1025 handlePlayerListHeaderFooter!(Lnet/minecraft/network/play/server/SPacketPlayerListHeaderFooter;)V void net.minecraft.network.play.server.SPacketPlayerListHeaderFooter
+1025 handleCollectItem!(Lnet/minecraft/network/play/server/SPacketCollectItem;)V void net.minecraft.network.play.server.SPacketCollectItem
+1025 handleEntityTeleport!(Lnet/minecraft/network/play/server/SPacketEntityTeleport;)V void net.minecraft.network.play.server.SPacketEntityTeleport
+1025 handleEntityProperties!(Lnet/minecraft/network/play/server/SPacketEntityProperties;)V void net.minecraft.network.play.server.SPacketEntityProperties
+1025 handleEntityEffect!(Lnet/minecraft/network/play/server/SPacketEntityEffect;)V void net.minecraft.network.play.server.SPacketEntityEffect
 net/minecraft/util/Util java.lang.Object
 9 getOSType!()Lnet/minecraft/util/Util$EnumOS; net.minecraft.util.Util.EnumOS
 net/minecraft/command/IAdminCommand null
 1153 notifyOperators!(Lnet/minecraft/command/ICommandSender;Lnet/minecraft/command/ICommand;ILjava/lang/String;[Ljava/lang/Object;)V void net.minecraft.command.ICommandSender;net.minecraft.command.ICommand;Int;String;Array<java.lang.Object>
 net/minecraft/network/play/INetHandlerPlayServer null
-1025 processTabComplete!(Lnet/minecraft/network/play/client/C14PacketTabComplete;)V void net.minecraft.network.play.client.C14PacketTabComplete
-1025 processChatMessage!(Lnet/minecraft/network/play/client/C01PacketChatMessage;)V void net.minecraft.network.play.client.C01PacketChatMessage
-1025 processClientStatus!(Lnet/minecraft/network/play/client/C16PacketClientStatus;)V void net.minecraft.network.play.client.C16PacketClientStatus
-1025 processClientSettings!(Lnet/minecraft/network/play/client/C15PacketClientSettings;)V void net.minecraft.network.play.client.C15PacketClientSettings
-1025 processConfirmTransaction!(Lnet/minecraft/network/play/client/C0FPacketConfirmTransaction;)V void net.minecraft.network.play.client.C0FPacketConfirmTransaction
-1025 processEnchantItem!(Lnet/minecraft/network/play/client/C11PacketEnchantItem;)V void net.minecraft.network.play.client.C11PacketEnchantItem
-1025 processClickWindow!(Lnet/minecraft/network/play/client/C0EPacketClickWindow;)V void net.minecraft.network.play.client.C0EPacketClickWindow
-1025 processCloseWindow!(Lnet/minecraft/network/play/client/C0DPacketCloseWindow;)V void net.minecraft.network.play.client.C0DPacketCloseWindow
-1025 processVanilla250Packet!(Lnet/minecraft/network/play/client/C17PacketCustomPayload;)V void net.minecraft.network.play.client.C17PacketCustomPayload
-1025 processUseEntity!(Lnet/minecraft/network/play/client/C02PacketUseEntity;)V void net.minecraft.network.play.client.C02PacketUseEntity
-1025 processKeepAlive!(Lnet/minecraft/network/play/client/C00PacketKeepAlive;)V void net.minecraft.network.play.client.C00PacketKeepAlive
-1025 processPlayer!(Lnet/minecraft/network/play/client/C03PacketPlayer;)V void net.minecraft.network.play.client.C03PacketPlayer
-1025 processPlayerAbilities!(Lnet/minecraft/network/play/client/C13PacketPlayerAbilities;)V void net.minecraft.network.play.client.C13PacketPlayerAbilities
-1025 processPlayerDigging!(Lnet/minecraft/network/play/client/C07PacketPlayerDigging;)V void net.minecraft.network.play.client.C07PacketPlayerDigging
-1025 processEntityAction!(Lnet/minecraft/network/play/client/C0BPacketEntityAction;)V void net.minecraft.network.play.client.C0BPacketEntityAction
-1025 processInput!(Lnet/minecraft/network/play/client/C0CPacketInput;)V void net.minecraft.network.play.client.C0CPacketInput
-1025 handleResourcePackStatus!(Lnet/minecraft/network/play/client/C19PacketResourcePackStatus;)V void net.minecraft.network.play.client.C19PacketResourcePackStatus
-1025 processHeldItemChange!(Lnet/minecraft/network/play/client/C09PacketHeldItemChange;)V void net.minecraft.network.play.client.C09PacketHeldItemChange
-1025 processCreativeInventoryAction!(Lnet/minecraft/network/play/client/C10PacketCreativeInventoryAction;)V void net.minecraft.network.play.client.C10PacketCreativeInventoryAction
-1025 processUpdateSign!(Lnet/minecraft/network/play/client/C12PacketUpdateSign;)V void net.minecraft.network.play.client.C12PacketUpdateSign
-1025 handleAnimation!(Lnet/minecraft/network/play/client/C0APacketAnimation;)V void net.minecraft.network.play.client.C0APacketAnimation
-1025 handleSpectate!(Lnet/minecraft/network/play/client/C18PacketSpectate;)V void net.minecraft.network.play.client.C18PacketSpectate
-1025 processPlayerBlockPlacement!(Lnet/minecraft/network/play/client/C08PacketPlayerBlockPlacement;)V void net.minecraft.network.play.client.C08PacketPlayerBlockPlacement
-net/minecraft/network/play/client/C0APacketAnimation java.lang.Object
+1025 processTabComplete!(Lnet/minecraft/network/play/client/CPacketTabComplete;)V void net.minecraft.network.play.client.CPacketTabComplete
+1025 processChatMessage!(Lnet/minecraft/network/play/client/CPacketChatMessage;)V void net.minecraft.network.play.client.CPacketChatMessage
+1025 processClientStatus!(Lnet/minecraft/network/play/client/CPacketClientStatus;)V void net.minecraft.network.play.client.CPacketClientStatus
+1025 processClientSettings!(Lnet/minecraft/network/play/client/CPacketClientSettings;)V void net.minecraft.network.play.client.CPacketClientSettings
+1025 processConfirmTransaction!(Lnet/minecraft/network/play/client/CPacketConfirmTransaction;)V void net.minecraft.network.play.client.CPacketConfirmTransaction
+1025 processEnchantItem!(Lnet/minecraft/network/play/client/CPacketEnchantItem;)V void net.minecraft.network.play.client.CPacketEnchantItem
+1025 processClickWindow!(Lnet/minecraft/network/play/client/CPacketClickWindow;)V void net.minecraft.network.play.client.CPacketClickWindow
+1025 processCloseWindow!(Lnet/minecraft/network/play/client/CPacketCloseWindow;)V void net.minecraft.network.play.client.CPacketCloseWindow
+1025 processVanilla250Packet!(Lnet/minecraft/network/play/client/CPacketCustomPayload;)V void net.minecraft.network.play.client.CPacketCustomPayload
+1025 processUseEntity!(Lnet/minecraft/network/play/client/CPacketUseEntity;)V void net.minecraft.network.play.client.CPacketUseEntity
+1025 processKeepAlive!(Lnet/minecraft/network/play/client/CPacketKeepAlive;)V void net.minecraft.network.play.client.CPacketKeepAlive
+1025 processPlayer!(Lnet/minecraft/network/play/client/CPacketPlayer;)V void net.minecraft.network.play.client.CPacketPlayer
+1025 processPlayerAbilities!(Lnet/minecraft/network/play/client/CPacketPlayerAbilities;)V void net.minecraft.network.play.client.CPacketPlayerAbilities
+1025 processPlayerDigging!(Lnet/minecraft/network/play/client/CPacketPlayerDigging;)V void net.minecraft.network.play.client.CPacketPlayerDigging
+1025 processEntityAction!(Lnet/minecraft/network/play/client/CPacketEntityAction;)V void net.minecraft.network.play.client.CPacketEntityAction
+1025 processInput!(Lnet/minecraft/network/play/client/CPacketInput;)V void net.minecraft.network.play.client.CPacketInput
+1025 handleResourcePackStatus!(Lnet/minecraft/network/play/client/CPacketResourcePackStatus;)V void net.minecraft.network.play.client.CPacketResourcePackStatus
+1025 processHeldItemChange!(Lnet/minecraft/network/play/client/CPacketHeldItemChange;)V void net.minecraft.network.play.client.CPacketHeldItemChange
+1025 processCreativeInventoryAction!(Lnet/minecraft/network/play/client/CPacketCreativeInventoryAction;)V void net.minecraft.network.play.client.CPacketCreativeInventoryAction
+1025 processUpdateSign!(Lnet/minecraft/network/play/client/CPacketUpdateSign;)V void net.minecraft.network.play.client.CPacketUpdateSign
+1025 handleAnimation!(Lnet/minecraft/network/play/client/CPacketAnimation;)V void net.minecraft.network.play.client.CPacketAnimation
+1025 handleSpectate!(Lnet/minecraft/network/play/client/CPacketSpectate;)V void net.minecraft.network.play.client.CPacketSpectate
+1025 processPlayerBlockPlacement!(Lnet/minecraft/network/play/client/CPacketPlayerBlockPlacement;)V void net.minecraft.network.play.client.CPacketPlayerBlockPlacement
+net/minecraft/network/play/client/CPacketAnimation java.lang.Object
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/play/INetHandlerPlayServer;)V void net.minecraft.network.play.INetHandlerPlayServer
@@ -20924,20 +20924,20 @@ net/minecraft/network/play/client/C0APacketAnimation java.lang.Object
 net/minecraft/network/handshake/INetHandlerHandshakeServer null
 1025 processHandshake!(Lnet/minecraft/network/handshake/client/C00Handshake;)V void net.minecraft.network.handshake.client.C00Handshake
 net/minecraft/network/login/INetHandlerLoginClient null
-1025 handleLoginSuccess!(Lnet/minecraft/network/login/server/S02PacketLoginSuccess;)V void net.minecraft.network.login.server.S02PacketLoginSuccess
-1025 handleEncryptionRequest!(Lnet/minecraft/network/login/server/S01PacketEncryptionRequest;)V void net.minecraft.network.login.server.S01PacketEncryptionRequest
-1025 handleEnableCompression!(Lnet/minecraft/network/login/server/S03PacketEnableCompression;)V void net.minecraft.network.login.server.S03PacketEnableCompression
-1025 handleDisconnect!(Lnet/minecraft/network/login/server/S00PacketDisconnect;)V void net.minecraft.network.login.server.S00PacketDisconnect
+1025 handleLoginSuccess!(Lnet/minecraft/network/login/server/SPacketLoginSuccess;)V void net.minecraft.network.login.server.SPacketLoginSuccess
+1025 handleEncryptionRequest!(Lnet/minecraft/network/login/server/SPacketEncryptionRequest;)V void net.minecraft.network.login.server.SPacketEncryptionRequest
+1025 handleEnableCompression!(Lnet/minecraft/network/login/server/SPacketEnableCompression;)V void net.minecraft.network.login.server.SPacketEnableCompression
+1025 handleDisconnect!(Lnet/minecraft/network/login/server/SPacketDisconnect;)V void net.minecraft.network.login.server.SPacketDisconnect
 net/minecraft/network/login/INetHandlerLoginServer null
-1025 processLoginStart!(Lnet/minecraft/network/login/client/C00PacketLoginStart;)V void net.minecraft.network.login.client.C00PacketLoginStart
-1025 processEncryptionResponse!(Lnet/minecraft/network/login/client/C01PacketEncryptionResponse;)V void net.minecraft.network.login.client.C01PacketEncryptionResponse
+1025 processLoginStart!(Lnet/minecraft/network/login/client/CPacketLoginStart;)V void net.minecraft.network.login.client.CPacketLoginStart
+1025 processEncryptionResponse!(Lnet/minecraft/network/login/client/CPacketEncryptionResponse;)V void net.minecraft.network.login.client.CPacketEncryptionResponse
 net/minecraft/network/status/INetHandlerStatusClient null
-1025 handlePong!(Lnet/minecraft/network/status/server/S01PacketPong;)V void net.minecraft.network.status.server.S01PacketPong
-1025 handleServerInfo!(Lnet/minecraft/network/status/server/S00PacketServerInfo;)V void net.minecraft.network.status.server.S00PacketServerInfo
+1025 handlePong!(Lnet/minecraft/network/status/server/SPacketPong;)V void net.minecraft.network.status.server.SPacketPong
+1025 handleServerInfo!(Lnet/minecraft/network/status/server/SPacketServerInfo;)V void net.minecraft.network.status.server.SPacketServerInfo
 net/minecraft/network/status/INetHandlerStatusServer null
-1025 processPing!(Lnet/minecraft/network/status/client/C01PacketPing;)V void net.minecraft.network.status.client.C01PacketPing
-1025 processServerQuery!(Lnet/minecraft/network/status/client/C00PacketServerQuery;)V void net.minecraft.network.status.client.C00PacketServerQuery
-net/minecraft/network/status/client/C00PacketServerQuery java.lang.Object
+1025 processPing!(Lnet/minecraft/network/status/client/CPacketPing;)V void net.minecraft.network.status.client.CPacketPing
+1025 processServerQuery!(Lnet/minecraft/network/status/client/CPacketServerQuery;)V void net.minecraft.network.status.client.CPacketServerQuery
+net/minecraft/network/status/client/CPacketServerQuery java.lang.Object
 1 readPacketData!(Lnet/minecraft/network/PacketBuffer;)V void net.minecraft.network.PacketBuffer
 4161 processPacket!(Lnet/minecraft/network/INetHandler;)V void net.minecraft.network.INetHandler
 1 processPacket!(Lnet/minecraft/network/status/INetHandlerStatusServer;)V void net.minecraft.network.status.INetHandlerStatusServer

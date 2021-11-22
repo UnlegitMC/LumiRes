@@ -1,10 +1,3 @@
-PK: . net/minecraft/src
-PK: net net
-PK: net/minecraft net/minecraft
-PK: net/minecraft/client net/minecraft/client
-PK: net/minecraft/client/main net/minecraft/client/main
-PK: net/minecraft/realms net/minecraft/realms
-PK: net/minecraft/server net/minecraft/server
 CL: a net/minecraft/util/text/TextFormatting
 CL: aa net/minecraft/command/server/CommandEmote
 CL: aaa net/minecraft/entity/item/EntityEnderPearl
@@ -2206,9 +2199,9 @@ CL: gr net/minecraft/network/play/server/SPacketParticles
 CL: gs net/minecraft/network/play/server/SPacketJoinGame
 CL: gt net/minecraft/network/play/server/SPacketMaps
 CL: gu net/minecraft/network/play/server/SPacketEntity
-CL: gu$a net/minecraft/network/play/server/SPacketEntity$S15PacketEntityRelMove
-CL: gu$b net/minecraft/network/play/server/SPacketEntity$S17PacketEntityLookMove
-CL: gu$c net/minecraft/network/play/server/SPacketEntity$S16PacketEntityLook
+CL: gu$a net/minecraft/network/play/server/SPacketEntity$SPacketEntityRelMove
+CL: gu$b net/minecraft/network/play/server/SPacketEntity$SPacketEntityLookMove
+CL: gu$c net/minecraft/network/play/server/SPacketEntity$SPacketEntityLook
 CL: gv net/minecraft/network/play/server/SPacketMoveVehicle
 CL: gw net/minecraft/network/play/server/SPacketSignEditorOpen
 CL: gx net/minecraft/network/play/server/SPacketPlayerAbilities
@@ -2275,9 +2268,9 @@ CL: ir net/minecraft/network/play/client/CPacketUseEntity
 CL: ir$a net/minecraft/network/play/client/CPacketUseEntity$Action
 CL: is net/minecraft/network/play/client/CPacketKeepAlive
 CL: it net/minecraft/network/play/client/CPacketPlayer
-CL: it$a net/minecraft/network/play/client/CPacketPlayer$C04PacketPlayerPosition
-CL: it$b net/minecraft/network/play/client/CPacketPlayer$C06PacketPlayerPosLook
-CL: it$c net/minecraft/network/play/client/CPacketPlayer$C05PacketPlayerLook
+CL: it$a net/minecraft/network/play/client/CPacketPlayer$CPacketPlayerPosition
+CL: it$b net/minecraft/network/play/client/CPacketPlayer$CPacketPlayerPosLook
+CL: it$c net/minecraft/network/play/client/CPacketPlayer$CPacketPlayerLook
 CL: iu net/minecraft/network/play/client/CPacketVehicleMove
 CL: iv net/minecraft/network/play/client/CPacketSteerBoat
 CL: iw net/minecraft/network/play/client/CPacketPlayerAbilities
@@ -26067,15 +26060,15 @@ MD: gt/a (Lem;)V net/minecraft/network/play/server/SPacketMaps/func_148837_a (Ln
 MD: gt/a (Lep;)V net/minecraft/network/play/server/SPacketMaps/func_148833_a (Lnet/minecraft/network/INetHandler;)V
 MD: gt/a (Lfi;)V net/minecraft/network/play/server/SPacketMaps/func_148833_a (Lnet/minecraft/network/play/INetHandlerPlayClient;)V
 MD: gt/b (Lem;)V net/minecraft/network/play/server/SPacketMaps/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
-MD: gu$a/a (Lem;)V net/minecraft/network/play/server/SPacketEntity$S15PacketEntityRelMove/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
-MD: gu$a/a (Lep;)V net/minecraft/network/play/server/SPacketEntity$S15PacketEntityRelMove/func_148833_a (Lnet/minecraft/network/INetHandler;)V
-MD: gu$a/b (Lem;)V net/minecraft/network/play/server/SPacketEntity$S15PacketEntityRelMove/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
-MD: gu$b/a (Lem;)V net/minecraft/network/play/server/SPacketEntity$S17PacketEntityLookMove/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
-MD: gu$b/a (Lep;)V net/minecraft/network/play/server/SPacketEntity$S17PacketEntityLookMove/func_148833_a (Lnet/minecraft/network/INetHandler;)V
-MD: gu$b/b (Lem;)V net/minecraft/network/play/server/SPacketEntity$S17PacketEntityLookMove/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
-MD: gu$c/a (Lem;)V net/minecraft/network/play/server/SPacketEntity$S16PacketEntityLook/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
-MD: gu$c/a (Lep;)V net/minecraft/network/play/server/SPacketEntity$S16PacketEntityLook/func_148833_a (Lnet/minecraft/network/INetHandler;)V
-MD: gu$c/b (Lem;)V net/minecraft/network/play/server/SPacketEntity$S16PacketEntityLook/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
+MD: gu$a/a (Lem;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityRelMove/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
+MD: gu$a/a (Lep;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityRelMove/func_148833_a (Lnet/minecraft/network/INetHandler;)V
+MD: gu$a/b (Lem;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityRelMove/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
+MD: gu$b/a (Lem;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityLookMove/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
+MD: gu$b/a (Lep;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityLookMove/func_148833_a (Lnet/minecraft/network/INetHandler;)V
+MD: gu$b/b (Lem;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityLookMove/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
+MD: gu$c/a (Lem;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityLook/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
+MD: gu$c/a (Lep;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityLook/func_148833_a (Lnet/minecraft/network/INetHandler;)V
+MD: gu$c/b (Lem;)V net/minecraft/network/play/server/SPacketEntity$SPacketEntityLook/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
 MD: gu/a ()I net/minecraft/network/play/server/SPacketEntity/func_186952_a ()I
 MD: gu/a (Laht;)Lrr; net/minecraft/network/play/server/SPacketEntity/func_149065_a (Lnet/minecraft/world/World;)Lnet/minecraft/entity/Entity;
 MD: gu/a (Lem;)V net/minecraft/network/play/server/SPacketEntity/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
@@ -26528,15 +26521,15 @@ MD: is/a (Lem;)V net/minecraft/network/play/client/CPacketKeepAlive/func_148837_
 MD: is/a (Lep;)V net/minecraft/network/play/client/CPacketKeepAlive/func_148833_a (Lnet/minecraft/network/INetHandler;)V
 MD: is/a (Lig;)V net/minecraft/network/play/client/CPacketKeepAlive/func_148833_a (Lnet/minecraft/network/play/INetHandlerPlayServer;)V
 MD: is/b (Lem;)V net/minecraft/network/play/client/CPacketKeepAlive/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
-MD: it$a/a (Lem;)V net/minecraft/network/play/client/CPacketPlayer$C04PacketPlayerPosition/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
-MD: it$a/a (Lep;)V net/minecraft/network/play/client/CPacketPlayer$C04PacketPlayerPosition/func_148833_a (Lnet/minecraft/network/INetHandler;)V
-MD: it$a/b (Lem;)V net/minecraft/network/play/client/CPacketPlayer$C04PacketPlayerPosition/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
-MD: it$b/a (Lem;)V net/minecraft/network/play/client/CPacketPlayer$C06PacketPlayerPosLook/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
-MD: it$b/a (Lep;)V net/minecraft/network/play/client/CPacketPlayer$C06PacketPlayerPosLook/func_148833_a (Lnet/minecraft/network/INetHandler;)V
-MD: it$b/b (Lem;)V net/minecraft/network/play/client/CPacketPlayer$C06PacketPlayerPosLook/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
-MD: it$c/a (Lem;)V net/minecraft/network/play/client/CPacketPlayer$C05PacketPlayerLook/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
-MD: it$c/a (Lep;)V net/minecraft/network/play/client/CPacketPlayer$C05PacketPlayerLook/func_148833_a (Lnet/minecraft/network/INetHandler;)V
-MD: it$c/b (Lem;)V net/minecraft/network/play/client/CPacketPlayer$C05PacketPlayerLook/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
+MD: it$a/a (Lem;)V net/minecraft/network/play/client/CPacketPlayer$CPacketPlayerPosition/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
+MD: it$a/a (Lep;)V net/minecraft/network/play/client/CPacketPlayer$CPacketPlayerPosition/func_148833_a (Lnet/minecraft/network/INetHandler;)V
+MD: it$a/b (Lem;)V net/minecraft/network/play/client/CPacketPlayer$CPacketPlayerPosition/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
+MD: it$b/a (Lem;)V net/minecraft/network/play/client/CPacketPlayer$CPacketPlayerPosLook/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
+MD: it$b/a (Lep;)V net/minecraft/network/play/client/CPacketPlayer$CPacketPlayerPosLook/func_148833_a (Lnet/minecraft/network/INetHandler;)V
+MD: it$b/b (Lem;)V net/minecraft/network/play/client/CPacketPlayer$CPacketPlayerPosLook/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
+MD: it$c/a (Lem;)V net/minecraft/network/play/client/CPacketPlayer$CPacketPlayerLook/func_148837_a (Lnet/minecraft/network/PacketBuffer;)V
+MD: it$c/a (Lep;)V net/minecraft/network/play/client/CPacketPlayer$CPacketPlayerLook/func_148833_a (Lnet/minecraft/network/INetHandler;)V
+MD: it$c/b (Lem;)V net/minecraft/network/play/client/CPacketPlayer$CPacketPlayerLook/func_148840_b (Lnet/minecraft/network/PacketBuffer;)V
 MD: it/a ()Z net/minecraft/network/play/client/CPacketPlayer/func_149465_i ()Z
 MD: it/a (D)D net/minecraft/network/play/client/CPacketPlayer/func_186997_a (D)D
 MD: it/a (F)F net/minecraft/network/play/client/CPacketPlayer/func_186999_a (F)F
