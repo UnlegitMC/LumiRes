@@ -1496,3 +1496,71 @@ net/minecraft/client/gui/ScaledResolution java.lang.Object
 1 getScaledWidth_double!()D Double
 1 getScaledHeight_double!()D Double
 1 getScaleFactor!()I Int
+
+net/minecraft/client/gui/GuiScreen net.minecraft.client.gui.Gui
+26 LOGGER org.apache.logging.log4j.Logger
+26 PROTOCOLS java.util.Set<*>
+26 NEWLINE_SPLITTER com.google.common.base.Splitter
+2 selectedButton net.minecraft.client.gui.GuiButton
+2 eventButton Int
+1 mc net.minecraft.client.Minecraft
+4 itemRender net.minecraft.client.renderer.entity.RenderItem
+1 width Int
+1 height Int
+4 buttonList java.util.List<*>
+4 labelList java.util.List<*>
+1 allowUserInput Boolean
+4 fontRendererObj net.minecraft.client.gui.FontRenderer
+2 lastMouseEvent Long
+2 touchValue Int
+2 clickedLinkURI java.net.URI
+4 keyTyped!(CI)V void Character;Int
+1 setGuiSize!(II)V void Int;Int
+1 drawScreen!(IIF)V void Int;Int;Float
+4 mouseClicked!(III)V void Int;Int;Int
+4 mouseClickMove!(IIIJ)V void Int;Int;Int;Long
+1 setWorldAndResolution!(Lnet/minecraft/client/Minecraft;II)V void net.minecraft.client.Minecraft;Int;Int
+4 actionPerformed!(Lnet/minecraft/client/gui/GuiButton;)V void net.minecraft.client.gui.GuiButton
+4 handleComponentClick!(Lnet/minecraft/util/IChatComponent;)Z Boolean net.minecraft.util.IChatComponent
+1 handleComponentHover!(Lnet/minecraft/util/IChatComponent;II)V void net.minecraft.util.IChatComponent;Int;Int
+4 drawCreativeTabHoveringText!(Ljava/lang/String;II)V void String;Int;Int
+4 setText!(Ljava/lang/String;Z)V void String;Boolean
+2 openWebLink!(Ljava/net/URI;)V void java.net.URI
+4 renderToolTip!(Lnet/minecraft/item/ItemStack;II)V void net.minecraft.item.ItemStack;Int;Int
+1 confirmClicked!(ZI)V void Boolean;Int
+1 initGui!()V void
+4 mouseReleased!(III)V void Int;Int;Int
+1 onResize!(Lnet/minecraft/client/Minecraft;II)V void net.minecraft.client.Minecraft;Int;Int
+1 sendChatMessage!(Ljava/lang/String;Z)V void String;Boolean
+1 drawWorldBackground!(I)V void Int
+1 drawDefaultBackground!()V void
+1 drawBackground!(I)V void Int
+1 doesGuiPauseGame!()Z Boolean
+9 isKeyComboCtrlX!(I)Z Boolean Int
+1 updateScreen!()V void
+9 isKeyComboCtrlV!(I)Z Boolean Int
+9 setClipboardString!(Ljava/lang/String;)V void String
+9 isKeyComboCtrlC!(I)Z Boolean Int
+1 sendChatMessage!(Ljava/lang/String;)V void String
+9 isKeyComboCtrlA!(I)Z Boolean Int
+1 handleMouseInput!()V void
+1 handleKeyboardInput!()V void
+1 onGuiClosed!()V void
+9 getClipboardString!()Ljava/lang/String; String
+1 handleInput!()V void
+9 isCtrlKeyDown!()Z Boolean
+9 isShiftKeyDown!()Z Boolean
+9 isAltKeyDown!()Z Boolean
+
+net/minecraft/util/Timer java.lang.Object
+0 ticksPerSecond Float
+1 elapsedTicks Int
+1 renderPartialTicks Float
+1 timerSpeed Float
+1 elapsedPartialTicks Float
+2 lastHRTime Double
+2 lastSyncSysClock Long
+2 lastSyncHRClock Long
+2 counter Long
+2 timeSyncAdjustment Double
+1 updateTimer!()V void
